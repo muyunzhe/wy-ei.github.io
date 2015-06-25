@@ -35,7 +35,7 @@ function addImageAlt(){
                     continue;
             }else if(alt.match(/^both/i)=="both"){
                      var pwidth = imgs[i].clientWidth;
-                    imgs[i].style.height = 9/16*pwidth+"px";
+                    imgs[i].style.height = 9/16*10/7*pwidth+"px";
                     imgs[i].setAttribute("id", "bg");
                     var header = document.getElementById("header");
                     header.style.backgroundImage = 'url('+ imgs[i].getAttribute("src") +')';

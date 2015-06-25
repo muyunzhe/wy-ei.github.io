@@ -23,7 +23,7 @@ body>header{
   background-position: 70% 50%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url(../images/bg/young.jpeg);
+  background-image: url(../images/bg/cat.jpg);
 }
 
 body>header div,nav{
@@ -207,6 +207,13 @@ p.end{
   margin-bottom: 40px;
   text-indent: 2em;
 }
+
+
+
+.content+footer{
+  margin-top: 60px; 
+}
+
 
 p.lastpage,p.nextpage{
   display: inline;
