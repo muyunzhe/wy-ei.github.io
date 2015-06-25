@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+
+<section>
+    <article>
+        <header>
+            <h1>{{ page.title }}</h1>
+            <p>{{ page.date|date:"%Y-%m-%d" }}</p> 
+        </header>
+
+        <div class="content" id="content">
+            {{ content }}
+        </div>
+
+        <footer>
+            <p class="end"><b>[完]</b></p>   
+        {% if page.previous %}
+              <p class="lastpage"><i class="fa fa-angle-double-left fa-fw"></i>上一篇：<a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a></p>
+        {% endif %}
+
+        {% if page.next %}
+              <p class="nextpage"><i class="fa fa-angle-double-right fa-fw"></i>下一篇：<a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a></p>
+        {% endif %}
+        </footer>
+    </article>
+    <div id="show">
+    <p>希望添加评论？<a href="" onclick="return showComment();"><b>点击这里</b></a></p>
+<div>
+</section>
+
+<section id="comment" style="display:none;">
+    {% include comment %} 
+    <div id="disqus_container">
+        <div class="ds-thread" data-thread-key={{ page.id }} data-title={{ page.title }} data-url="wy-ei.com/{{ page.url }}"></div>        
+    </div>
+</section>
+

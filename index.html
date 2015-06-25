@@ -1,0 +1,21 @@
+---
+layout: page
+title: 最近发布
+---
+
+
+
+<div id="article-list">
+   
+    <ul>
+    {% for i in (0..7) %}
+        <li>
+            <p class="date">{{ site.posts[i].date|date:"%Y-%m-%d" }} - <a href="{{ site.posts[i].url }}">{{ site.posts[i].title }}</a>
+            </p>
+        </li>
+    {% endfor %}
+	<li>
+		<a href="/list.html">查看全部...</a>
+	</li>
+    </ul>
+</div>

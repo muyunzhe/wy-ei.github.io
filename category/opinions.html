@@ -1,0 +1,22 @@
+---
+layout: page
+title: 分类:观点与感想
+header: Posts By Category
+group: navigation
+---
+{% include JB/setup %}
+
+
+<div class="index-content">
+   
+    <ul class="artical-list">
+    {% for post in site.categories.opinion %}
+        <li>
+            <div class="title-date"><p class="date">{{ post.date|date:"%Y-%m-%d" }}</p><p class="arrow"> >> </p></div>
+            <h2>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </h2>
+        </li>
+    {% endfor %}
+    </ul>
+</div>
