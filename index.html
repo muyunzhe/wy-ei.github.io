@@ -5,17 +5,26 @@ title: 最近发布
 
 
 
-<div id="article-list">
-   
+<div id="home">
     <ul>
-    {% for i in (0..7) %}
+    {% for i in (0..4) %}
         <li>
-            <p class="date">{{ site.posts[i].date|date:"%Y-%m-%d" }} - <a href="{{ site.posts[i].url }}">{{ site.posts[i].title }}</a>
+            <time class="date"><i class="fa fa-calendar fa-fw"></i> {{ site.posts[i].date|date:"%Y-%m-%d" }}</time>
+
+            <p class="title"><a href="{{ site.posts[i].url }}">{{ site.posts[i].title }}</a>
             </p>
+
+            {% if site.excerpt_separator %}
+                {{ site.posts[i].excerpt }}
+            {% else %}
+                {{ site.posts[i].content}}
+            {% endif %}
+
+            <p class="readmore"><a href="{{ site.posts[i].url }}">阅读全文&gt;&gt;</a></p>
+            {% if site.posts[i].tag %}
+            <p class="tag">#{{ site.posts[i].tags[0] }}</p>
+            {% endif %}
         </li>
     {% endfor %}
-	<li>
-		<a href="/list.html">查看全部...</a>
-	</li>
     </ul>
 </div>

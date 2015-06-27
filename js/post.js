@@ -5,10 +5,13 @@ function addImageAlt(){
     }
     var imgs = content.getElementsByTagName("img");
     var windowWidth = document.documentElement.clientWidth;
+    if(!imgs){
+        return;
+    }
     if(windowWidth>800){
         popup(imgs);
     }
-    if(!imgs){
+    if(document.getElementById("page")){
         return;
     }
     for(var i=0;i<imgs.length;i++){
@@ -47,7 +50,7 @@ function addImageAlt(){
             var text = document.createTextNode(alt);
             p.appendChild(text);
             div.appendChild(p);
-           insertAfter(div,imgs[i]);
+            insertAfter(div,imgs[i]);
         }
     }
 }
@@ -290,104 +293,112 @@ function toTop(){
 
 
 
+function addIndex(){
+
+    if(document.getElementById("page")){
+        return;
+    }
+
+    function getText(id){
+        var nodes = id.childNodes;
+        for(var i=0;i<nodes.length;i++){
+            if(nodes[i].nodeType == 3){
+                return nodes[i].nodeValue;
+            }
+        }
+    }
+
+    var content = document.getElementById("content");
+    if(!content){
+        return;
+    }
+
+    var ul = document.createElement("ul");
+    var h2s = content.getElementsByTagName("h2");
+    var nodes = content.querySelectorAll("h2,h3");
+    if(nodes.length<3){
+        return;
+    }
+    var lis = new Array();
+    var tagname;
+    var len = nodes.length;
+    var row = 0,subrow=0;
+    for(var i=0;i<len;){
+        if(nodes[i].tagName.toLowerCase()=="h2"){
+            row++;
+            nodes[i].setAttribute("id", "h2"+row);
+            lis.push(getText(nodes[i]));
+            i++;
+        }else{
+            var sublis = new Array();
+            while(i<len&&nodes[i].tagName.toLowerCase()=="h3"){
+                subrow++;
+                nodes[i].setAttribute("id", "h3"+row+""+subrow);
+                sublis.push(getText(nodes[i]));
+                i++;
+            }
+            subrow=0;
+            lis.push(sublis);
+        }
+    }
+    row=0;
+    for(var j = 0;j<lis.length;j++){
+        if(typeof lis[j] == "string"){
+            row++;
+            var li = document.createElement("li");
+            var textNode = document.createTextNode(lis[j]);
+            var a = document.createElement("a");
+            a.setAttribute("href", "#h2"+row);
+            a.appendChild(textNode);
+            li.appendChild(document.createTextNode(row+". "));
+            li.appendChild(a);
+            ul.appendChild(li);      
+        }else{
+            var ul2 = document.createElement("ul");
+            subrow=0;
+            for(var k=0;k<lis[j].length;k++){
+                subrow++;
+                var subli = document.createElement("li");
+                var a = document.createElement("a");
+                a.setAttribute("href", "#h3"+row+""+subrow);
+                var textNode = document.createTextNode(lis[j][k]);
+                a.appendChild(textNode);
+                subli.appendChild(document.createTextNode(row+"."+subrow+". "));
+                subli.appendChild(a);     
+                ul2.appendChild(subli);
+            }
+            var li = document.createElement("li");
+            li.appendChild(ul2);
+            ul.appendChild(li);
+        }
+    }
+    if(row==0){
+        ul = ul.firstChild.firstChild;
+    }
+
+    var div = document.createElement("div");
+    div.setAttribute("id","index");
+    var h3 = document.createElement("h3");
+    var textnode = document.createTextNode("目录:");
+    h3.appendChild(textnode);
+    div.appendChild(h3);
+    div.appendChild(ul);
+
+    var bg = document.getElementById("bg");
+    if(bg){
+        insertAfter(div,bg.parentNode);
+    }else{
+        content.insertBefore(div,content.firstChild);
+    }
+}
+
 
 
 var loadEvent = function(){
     addImageAlt();
     toTop();
-    (function(){
-        function getText(id){
-            var nodes = id.childNodes;
-            for(var i=0;i<nodes.length;i++){
-                if(nodes[i].nodeType == 3){
-                    return nodes[i].nodeValue;
-                }
-            }
-        }
-
-        var content = document.getElementById("content");
-        if(!content){
-            return;
-        }
-
-        var ul = document.createElement("ul");
-        var h2s = content.getElementsByTagName("h2");
-        var nodes = content.querySelectorAll("h2,h3");
-        if(nodes.length<3){
-            return;
-        }
-        var lis = new Array();
-        var tagname;
-        var len = nodes.length;
-        var row = 0,subrow=0;
-        for(var i=0;i<len;){
-            if(nodes[i].tagName.toLowerCase()=="h2"){
-                row++;
-                nodes[i].setAttribute("id", "h2"+row);
-                lis.push(getText(nodes[i]));
-                i++;
-            }else{
-                var sublis = new Array();
-                while(i<len&&nodes[i].tagName.toLowerCase()=="h3"){
-                    subrow++;
-                    nodes[i].setAttribute("id", "h3"+row+""+subrow);
-                    sublis.push(getText(nodes[i]));
-                    i++;
-                }
-                subrow=0;
-                lis.push(sublis);
-            }
-        }
-        row=0;
-        for(var j = 0;j<lis.length;j++){
-            if(typeof lis[j] == "string"){
-                row++;
-                var li = document.createElement("li");
-                var textNode = document.createTextNode(lis[j]);
-                var a = document.createElement("a");
-                a.setAttribute("href", "#h2"+row);
-                a.appendChild(textNode);
-                li.appendChild(document.createTextNode(row+". "));
-                li.appendChild(a);
-                ul.appendChild(li);      
-            }else{
-                var ul2 = document.createElement("ul");
-                subrow=0;
-                for(var k=0;k<lis[j].length;k++){
-                    subrow++;
-                    var subli = document.createElement("li");
-                    var a = document.createElement("a");
-                    a.setAttribute("href", "#h3"+row+""+subrow);
-                    var textNode = document.createTextNode(lis[j][k]);
-                    a.appendChild(textNode);
-                    subli.appendChild(document.createTextNode(row+"."+subrow+". "));
-                    subli.appendChild(a);     
-                    ul2.appendChild(subli);
-                }
-                var li = document.createElement("li");
-                li.appendChild(ul2);
-                ul.appendChild(li);
-            }
-        }
-        if(row==0){
-            ul = ul.firstChild.firstChild;
-        }
-
-        var div = document.createElement("div");
-        div.setAttribute("id","index");
-        var h3 = document.createElement("h3");
-        var textnode = document.createTextNode("目录:");
-        h3.appendChild(textnode);
-        div.appendChild(h3);
-        div.appendChild(ul);
-
-        var bg = document.getElementById("bg");
-        if(bg){
-            insertAfter(div,bg.parentNode);
-        }else{
-            content.insertBefore(div,content.firstChild);
-        }
-    })();
+    addIndex();
+    
 }
 
 
