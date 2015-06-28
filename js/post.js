@@ -1,3 +1,14 @@
+function adjustHomePageImags(){
+    var page = document.getElementById("page");
+    if(page){
+        var imgs = page.getElementsByTagName("img");
+        for(var i=0,len=imgs.length;i<len;i++){
+            var imgWidth = imgs[i].clientWidth;
+            imgs[i].style.height = imgWidth*9/16+"px";
+        }
+    }
+}
+
 function addImageAlt(){
     var content = document.getElementById("content");
     if(!content){
@@ -12,6 +23,7 @@ function addImageAlt(){
         popup(imgs);
     }
     if(document.getElementById("page")){
+
         return;
     }
     for(var i=0;i<imgs.length;i++){
@@ -398,6 +410,7 @@ var loadEvent = function(){
     addImageAlt();
     toTop();
     addIndex();
+    adjustHomePageImags();
     
 }
 
