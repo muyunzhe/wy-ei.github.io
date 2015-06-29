@@ -1,3 +1,7 @@
+var windowWidth = (document.documentElement&&document.documentElement.clientWidth)||document.body.clientWidth;
+var windowHeight = (document.documentElement&&document.documentElement.clientHeight)||document.body.clientHeight;
+
+
 function adjustHomePageImags(){
     var page = document.getElementById("page");
     if(page){
@@ -15,7 +19,6 @@ function addImageAlt(){
         return;
     }
     var imgs = content.getElementsByTagName("img");
-    var windowWidth = document.documentElement.clientWidth;
     if(!imgs){
         return;
     }
@@ -23,7 +26,6 @@ function addImageAlt(){
         popup(imgs);
     }
     if(document.getElementById("page")){
-
         return;
     }
     for(var i=0;i<imgs.length;i++){
@@ -33,11 +35,13 @@ function addImageAlt(){
             div.setAttribute("class", "imgAlt")
             var p = document.createElement("p");
             if (alt.match(/^bg/i)=="bg"){
-                    var pwidth = imgs[i].clientWidth;
-                    console.log(pwidth);
-                    imgs[i].style.height = 9/16*10/7*pwidth+"px";
+                    var pwidth = imgs[i].offsetWidth;
                     imgs[i].setAttribute("id", "bg");
-
+                    if(windowWidth<900){
+                        imgs[i].style.height = pwidth*9/16+"px";
+                    }else{
+                        imgs[i].style.height = pwidth*9/16*10/7+"px";
+                    }
                     if(alt=="bg"||alt.indexOf("-")!=2){
                         continue;
                     }
@@ -49,9 +53,14 @@ function addImageAlt(){
                     imgs[i].parentNode.style.display = 'none';
                     continue;
             }else if(alt.match(/^both/i)=="both"){
-                     var pwidth = imgs[i].clientWidth;
-                    imgs[i].style.height = 9/16*10/7*pwidth+"px";
+                    var pwidth = imgs[i].offsetWidth;
+                    console.log(pwidth);
                     imgs[i].setAttribute("id", "bg");
+                    if(windowWidth<900){
+                        imgs[i].style.height = pwidth*9/16+"px";
+                    }else{
+                        imgs[i].style.height = pwidth*9/16*10/7+"px";
+                    }
                     var header = document.getElementById("header");
                     header.style.backgroundImage = 'url('+ imgs[i].getAttribute("src") +')';
                     if(alt=="both"||alt.indexOf("-")!=2){
@@ -73,7 +82,6 @@ function addImageAlt(){
 
 function resize(imgId,sec){
     var img= document.getElementById(imgId);
-    var windowWidth = document.documentElement.clientWidth;
     if(img.rsize){
         clearTimeout(img.rsize);
     }
@@ -107,8 +115,6 @@ function popup(imgNodes){
 
 
     function adjustImg(img){
-        var windowWidth = document.documentElement.clientWidth;
-        var windowHeight = document.documentElement.clientHeight;
         var div = document.createElement("div");
         var p = img.parentNode;
         div.style.display="block";
@@ -122,8 +128,6 @@ function popup(imgNodes){
         if(windowWidth<windowHeight){
             windowHeight = 9/16 * windowWidth;
         }
-
-
 
         div.style.height = windowHeight*0.7+"px";
 
