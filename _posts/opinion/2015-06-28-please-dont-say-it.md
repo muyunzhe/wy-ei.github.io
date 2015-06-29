@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 有些词，我们不该说
+title: 有些词，我们本不该说
 tag: 文明
 category: opinion
 ---
