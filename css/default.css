@@ -273,8 +273,11 @@ body>footer>p{
 }
 
 #tongji{
-  position: absolute;
+  position: fixed;
   left: -10000px;
+}
+#tongji img{
+  display: none;
 }
 
 

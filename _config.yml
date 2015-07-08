@@ -7,11 +7,12 @@ permalink: /:title
 
 title: 即刻出发
 url: http://wy-ei.com
-feed: /atom.xml
+rss_path: /rss.xml
+atom_path: /atom.xml
 author_info: <a href="http://wy-ei.com">即刻出发</a>
 excerpt_separator: "<!--more-->"
 author :
-  name : 即刻出发
+  name : wy-ei
   email : nameiswangyu@163.com
   github : wy-ei
 JB:
