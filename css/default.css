@@ -23,10 +23,10 @@ body a:hover{
 /* header layout */
 body>header{
   width: 100%;
-  background-position: 70% 50%;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url(../images/bg/cat.jpg);
+  background-size: 100% 360px;
+  background-image: url(../images/bg/young.jpeg);
 }
 
 body>header div,nav{
@@ -35,7 +35,7 @@ body>header div,nav{
 }
 
 body>header{
-  padding: 200px 0 20px 0;
+  padding: 240px 0 20px 0;
 }
 
 body>header h1{
