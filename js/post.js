@@ -162,7 +162,6 @@ function popup(imgNodes){
                 }
                 var img3 = document.getElementById("containerImg");
                 for(var i=filterImg.length-1;i>=0;i--){
-                    console.log(i);
                     if(filterImg[i].src==img3.src){
                         break;
                     }
@@ -202,7 +201,6 @@ function popup(imgNodes){
                 }
                 var img3 = document.getElementById("containerImg");
                 for(var i=filterImg.length-1;i>=0;i--){
-                    console.log(i);
                     if(filterImg[i].src==img3.src){
                         break;
                     }

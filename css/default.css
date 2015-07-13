@@ -206,6 +206,7 @@ img#bg{
 
 .content blockquote{
   border-left:.2em solid #ccc;
+  padding-left: 1em;
 }
 
 .content blockquote>p{
