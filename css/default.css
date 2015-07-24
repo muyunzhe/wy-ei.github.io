@@ -26,7 +26,7 @@ body>header{
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 360px;
-  background-image: url(../images/bg/young.jpeg);
+  background-image: url(../images/bg/2015-07-13.jpg);
 }
 
 body>header div,nav{
@@ -109,6 +109,7 @@ body>header li{
 section {
   width: 60%;
   margin: auto;
+  font-size: 14px;
 }
 
 section article{
@@ -127,7 +128,6 @@ section>article>header>h1{
 
 
 .content p{
-  font-size: 14px;
   line-height: 2.2em;
   margin-bottom: 1.2em;
 }
