@@ -495,9 +495,13 @@ pre{
 }
 
 iframe{
-  margin-bottom: 2em;
-  width: 100%;
+  padding-bottom: 3em;
+  padding-top: 2em;
+  margin: auto;
+  display: block;
 }
+
+
 
 
 @media screen and (max-width: 900px){
