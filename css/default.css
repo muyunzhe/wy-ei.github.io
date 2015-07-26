@@ -109,7 +109,7 @@ body>header li{
 section {
   width: 60%;
   margin: auto;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 section article{
@@ -385,7 +385,7 @@ div#show{
 }
 
 #home p{
-  font-size: 14px;
+  font-size: 15px;
   line-height: 2.0em;
   margin-bottom:15px;
   word-wrap:break-word;
@@ -501,6 +501,9 @@ iframe{
   display: block;
 }
 
+iframe[src*='music']{
+  width: 100%;  
+}
 
 
 

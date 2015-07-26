@@ -19,4 +19,4 @@ tag: 短片
 
 <iframe src="http://www.tudou.com/programs/view/html5embed.action?type=0&code=Zr3pMOicrvQ&lcode=&resourceId=0_06_05_99" allowtransparency="true" allowfullscreen="true" allowfullscreenInteractive="true" scrolling="no" border="0" frameborder="0" style="width:480px;height:400px;"></iframe>
 
-最后一个视频会给人带来一丝伤感，当我们发现自己只是苍茫人海中一个小不点的时候，每个人心中都会燃起一种不愿平凡的冲动。而我的理解是，我们要有自己的尺度，不要盲目从众，也不要特立独行，要做到有自己的风格，有自己的思想就够了。
+最后一个视频会给人带来一丝伤感，当我们发现自己只是苍茫人海中一个小不点的时候，每个人心中都会燃起一种不愿平凡的冲动。而我的理解是，我们要有自己的尺度，不要盲目从众，要做到有自己的风格，有自己的想发就够了。
