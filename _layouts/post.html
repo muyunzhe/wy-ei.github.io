@@ -22,16 +22,16 @@ layout: default
         {% endif %}
 
         {% if page.next %}
-              <p class="nextpage"><i class="fa fa-angle-double-right fa-fw"></i>下一篇：<a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a></p>
+              <p class="nextpage">下一篇：<a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a><i class="fa fa-angle-double-right fa-fw"></i></p>
         {% endif %}
         </footer>
     </article>
     <div id="show">
-    <p>希望添加评论？<a href="" onclick="return showComment();"><b>点击这里</b></a></p>
+    <p>希望添加评论？<b id='add-comment'>点击这里</b></p>
 </div>
 </section>
 
-<section id="comment" style="display:none;">
+<section id="comment" style="display: none;">
     {% include comment %} 
     <div id="disqus_container">
         <div class="ds-thread" data-thread-key={{ page.id }} data-title={{ page.title }} data-url="wy-ei.com/{{ page.url }}"></div>        

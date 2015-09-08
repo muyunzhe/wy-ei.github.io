@@ -1,7 +1,6 @@
 var windowWidth = (document.documentElement&&document.documentElement.clientWidth)||document.body.clientWidth;
 var windowHeight = (document.documentElement&&document.documentElement.clientHeight)||document.body.clientHeight;
 
-
 function adjustHomePageImags(){
     var page = document.getElementById("page");
     if(page){
@@ -104,15 +103,6 @@ function popup(imgNodes){
     var div = document.createElement("div");
     div.setAttribute("id", "over");
     insertAfter(div,header);
-    var handler = function(event){
-        switch(event.type){
-            case "click":
-                adjustImg(this);
-                break;
-        }
-    }
-
-
 
     function adjustImg(img){
         var div = document.createElement("div");
@@ -239,10 +229,10 @@ function popup(imgNodes){
 
     }
     for(var i = 0,len = imgNodes.length;i<len;i++){
-        imgNodes[i].onclick = handler;
+        imgNodes[i].onclick = function(){
+            adjustImg(this);
+        };
     }
-
-
 
     var over = document.getElementById("over");
     over.onclick=function(){
@@ -274,14 +264,15 @@ function addLoadEvent(func){
     }
 }
 
-
-function showComment(){
-    var comment = document.getElementById("comment");
-    comment.style.display="block";
-    var show = document.getElementById("show");
-    show.style.display="none";
-    window.scrollTo(0,document.body.scrollHeight);
-    return false;
+function bindShowCommentEvent(){
+    var addComment =  document.getElementById('add-comment');
+    addComment.addEventListener('click',function(){
+        var comment = document.getElementById("comment");
+        comment.style.display="block";
+        var show = document.getElementById("show");
+        show.style.display="none";
+        document.body.scrollTop = document.body.scrollHeight;    
+    });
 }
 
 
@@ -333,7 +324,7 @@ function addIndex(){
     if(nodes.length<3){
         return;
     }
-    var lis = new Array();
+    var lis = [];
     var tagname;
     var len = nodes.length;
     var row = 0,subrow=0;
@@ -413,7 +404,7 @@ var loadEvent = function(){
     toTop();
     addIndex();
     adjustHomePageImags();
-    
+    bindShowCommentEvent();
 }
 
 
