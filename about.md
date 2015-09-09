@@ -15,4 +15,5 @@ title: 关于
 
 + 微博:[即刻出发_](http://weibo.com/wangyu1993it)
 + 邮箱:wy@wy-ei.com
++ github:[wy-ei](https://github.com/wy-ei)
 
