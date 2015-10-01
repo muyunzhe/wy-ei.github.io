@@ -1,6 +1,6 @@
 var windowWidth = (document.documentElement && document.documentElement.clientWidth) || document.body.clientWidth;
 var windowHeight = (document.documentElement && document.documentElement.clientHeight) || document.body.clientHeight;
-window.addEventListener("load", function() {
+(function(){
     // adjust homePage imags
     (function() {
         var page = document.getElementById("page");
@@ -239,7 +239,7 @@ window.addEventListener("load", function() {
         });
     })();
 
-});
+})();
 
 
 
