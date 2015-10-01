@@ -1,6 +1,6 @@
 var windowWidth = (document.documentElement && document.documentElement.clientWidth) || document.body.clientWidth;
 var windowHeight = (document.documentElement && document.documentElement.clientHeight) || document.body.clientHeight;
-(function(){
+window.addEventListener("load",function(){
     // adjust homePage imags
     (function() {
         var page = document.getElementById("page");
@@ -78,40 +78,8 @@ var windowHeight = (document.documentElement && document.documentElement.clientH
         }
     })();
 
-    //  bind show comment Event
-    (function() {
-        var addComment = document.getElementById('add-comment');
-        if (!addComment) return;
-        addComment.addEventListener('click', function() {
-            var comment = document.getElementById("comment");
-            comment.style.display = "block";
-            var show = document.getElementById("show");
-            show.style.display = "none";
-            document.body.scrollTop = document.body.scrollHeight;
-        });
-    })();
+   
 
-
-
-    // toTop
-    (function() {
-
-        function getScrollTop() {
-            return (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-        }
-
-        var toTopDiv = document.getElementById("toTop");
-        toTopDiv.addEventListener("click", function() {
-
-            this.timeInterval = setInterval(function() {
-                var scrollTop = getScrollTop();
-                if (scrollTop == 0) {
-                    clearInterval(toTopDiv.timeInterval);
-                }
-                document.documentElement.scrollTop = document.body.scrollTop = Math.floor(scrollTop * 0.7);
-            }, 80);
-        });
-    })();
 
 
     // addIndex
@@ -214,8 +182,26 @@ var windowHeight = (document.documentElement && document.documentElement.clientH
             content.insertBefore(div, content.firstChild);
         }
     })();
+});
 
-    // trigger menu
+
+(function(){
+
+     //  bind show comment Event
+     (function() {
+        var addComment = document.getElementById('add-comment');
+        if (!addComment) return;
+        addComment.addEventListener('click', function() {
+            var comment = document.getElementById("comment");
+            comment.style.display = "block";
+            var show = document.getElementById("show");
+            show.style.display = "none";
+            document.body.scrollTop = document.body.scrollHeight;
+        });
+    })();
+
+
+     // trigger menu
     (function() {
         function getStyle(elem, styleName) {
             var style;
@@ -239,10 +225,27 @@ var windowHeight = (document.documentElement && document.documentElement.clientH
         });
     })();
 
+     // toTop
+    (function() {
+
+        function getScrollTop() {
+            return (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+        }
+
+        var toTopDiv = document.getElementById("toTop");
+        toTopDiv.addEventListener("click", function() {
+
+            this.timeInterval = setInterval(function() {
+                var scrollTop = getScrollTop();
+                if (scrollTop == 0) {
+                    clearInterval(toTopDiv.timeInterval);
+                }
+                document.documentElement.scrollTop = document.body.scrollTop = Math.floor(scrollTop * 0.7);
+            }, 80);
+        });
+    })();
+
 })();
-
-
-
 
 
 
