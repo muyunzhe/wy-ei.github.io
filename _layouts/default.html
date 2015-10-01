@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="author" content="Wangyu" />
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
@@ -21,9 +21,10 @@
         <div>
             <h1><a href="/">即刻出发</a></h1>
             <h2>Stay hungry,stay foolish.</h2>
+            <span id="drop-down"><i class="fa fa-align-justify fa-fw"></i></span>
         </div>
         <nav class="header-nav">
-            <ul>
+            <ul id="drop-target">
             <li><a href="/"><i class="fa fa-home fa-fw"></i><span>首页</span></a></li>
             <li><a href="/list.html"><i class="fa fa-align-justify fa-fw"></i><span>列表</span></a></li>
             <li><a href="/works/"><i class="fa fa-magic fa-fw"></i><span>作品</span></a></li>
