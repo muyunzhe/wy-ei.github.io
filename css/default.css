@@ -22,7 +22,6 @@ body>header{
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 360px;
-  background-image: url(../images/bg/2015-07-13.jpg);
   padding: 240px 0 20px 0;
 }
 
@@ -518,7 +517,12 @@ iframe[src*='music']{
 }
 
 
-
+@media screen and (min-width:900px){
+  /* header layout */
+  body>header{
+    background-image: url(../images/bg/2015-07-13.jpg);
+  }
+}
 @media screen and (max-width: 900px){
   body>header{
     background-image: none;
@@ -588,7 +592,6 @@ iframe[src*='music']{
   .content img{
     width: 100%;
   }
-  
 }
 
 
