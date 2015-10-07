@@ -122,7 +122,7 @@ section>article>header>h1{
 
 .content p{
   line-height: 2.2em;
-  margin-bottom: 1.2em;
+  margin-bottom: 1em;
 }
 
 .content h1,h2,h3,h4,h5,h6{
@@ -153,7 +153,7 @@ section>article>header>h1{
 }
 
 .content ol,.content ul{
-  margin: 2em 0;
+  margin: 1em 0;
 }
 
 .content ul li,.content ol li{
@@ -377,15 +377,20 @@ div#show{
     padding-left: 2em;
 }
 
-
 #home li{
   list-style: none;
-}
-
-#home li{
   margin-bottom: 5em; 
 }
-
+#home .content ol li{
+  margin-bottom: 1em;
+    list-style: decimal;
+    list-style-position: inside
+}
+#home .content ul li{
+    margin-bottom: 1em;
+    list-style:initial;
+    list-style-position: inside
+}
 #home img{
   width: 100%;
   margin-bottom:35px;

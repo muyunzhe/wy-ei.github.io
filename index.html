@@ -13,12 +13,14 @@ title: 最近发布
 
             <p class="title"><a href="{{ site.posts[i].url }}">{{ site.posts[i].title }}</a>
             </p>
-
-            {% if site.excerpt_separator %}
+            <div  class="content" id="content">
+              {% if site.excerpt_separator %}
                 {{ site.posts[i].excerpt }}
             {% else %}
                 {{ site.posts[i].content}}
             {% endif %}
+            </div>
+            
 
             <p class="readmore"><a href="{{ site.posts[i].url }}">阅读全文&gt;&gt;</a></p>
             {% if site.posts[i].tag %}

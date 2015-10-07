@@ -1,17 +1,7 @@
 var windowWidth = (document.documentElement && document.documentElement.clientWidth) || document.body.clientWidth;
 var windowHeight = (document.documentElement && document.documentElement.clientHeight) || document.body.clientHeight;
 window.addEventListener("load",function(){
-    // adjust homePage imags
-    (function() {
-        var page = document.getElementById("page");
-        if (page) {
-            var imgs = page.getElementsByTagName("img");
-            for (var i = 0, len = imgs.length; i < len; i++) {
-                var imgWidth = imgs[i].clientWidth;
-                imgs[i].style.height = imgWidth * 9 / 16 + "px";
-            }
-        }
-    })();
+
 
 
     // add Image alt and adjust image size
@@ -27,58 +17,87 @@ window.addEventListener("load",function(){
         if (windowWidth > 800) {
             popup(imgs);
         }
-        if (document.getElementById("page")) {
+        if(document.getElementById("page")){
             return;
         }
         for (var i = 0; i < imgs.length; i++) {
             var alt = imgs[i].getAttribute("alt");
-            if (alt) {
-                var div = document.createElement("div");
-                div.setAttribute("class", "imgAlt")
-                var p = document.createElement("p");
-                if (alt.match(/^bg/i) == "bg") {
-                    var pwidth = imgs[i].offsetWidth;
-                    imgs[i].setAttribute("id", "bg");
-                    if (windowWidth < 900) {
-                        imgs[i].style.height = pwidth * 9 / 16 + "px";
-                    } else {
-                        imgs[i].style.height = pwidth * 9 / 16 * 10 / 7 + "px";
-                    }
-                    if (alt == "bg" || alt.indexOf("-") != 2) {
-                        continue;
-                    }
-                    alt = alt.split("-")[1];
-
-                } else if (alt.match(/^hbg/i) == "hbg") {
-                    var header = document.getElementById("header");
-                    header.style.backgroundImage = 'url(' + imgs[i].getAttribute("src") + ')';
-                    imgs[i].parentNode.style.display = 'none';
-                    continue;
-                } else if (alt.match(/^both/i) == "both") {
-                    var pwidth = imgs[i].offsetWidth;
-                    console.log(pwidth);
-                    imgs[i].setAttribute("id", "bg");
-                    if (windowWidth < 900) {
-                        imgs[i].style.height = pwidth * 9 / 16 + "px";
-                    } else {
-                        imgs[i].style.height = pwidth * 9 / 16 * 10 / 7 + "px";
-                    }
-                    var header = document.getElementById("header");
-                    header.style.backgroundImage = 'url(' + imgs[i].getAttribute("src") + ')';
-                    if (alt == "both" || alt.indexOf("-") != 2) {
-                        continue;
-                    }
-                    alt = alt.split("-")[1];
+            if(!alt){
+                continue;
+            }
+            var index = alt.indexOf("-");
+            var option,text;
+            if(index==-1){
+                option = alt;
+                text = null;
+            }else{
+                option = alt.slice(0,index);
+                text = alt.slice(index);
+            }
+            
+            if (option) {
+                switch(option){
+                    case "bg":
+                        var pwidth = imgs[i].offsetWidth;
+                        imgs[i].setAttribute("id", "bg");
+                        if (windowWidth < 900) {
+                            imgs[i].style.height = pwidth * 9 / 16 + "px";
+                        } else {
+                            imgs[i].style.height = pwidth * 9 / 16 * 10 / 7 + "px";
+                        }
+                        break;
+                    case "hbg":
+                        var header = document.getElementById("header");
+                        header.style.backgroundImage = 'url(' + imgs[i].getAttribute("src") + ')';
+                        imgs[i].parentNode.style.display = 'none';
+                        text = null;
+                        break;
+                    case "both":
+                        var pwidth = imgs[i].offsetWidth;
+                        imgs[i].setAttribute("id", "bg");
+                        if (windowWidth < 900) {
+                            imgs[i].style.height = pwidth * 9 / 16 + "px";
+                        } else {
+                            imgs[i].style.height = pwidth * 9 / 16 * 10 / 7 + "px";
+                        }
+                        var header = document.getElementById("header");
+                        header.style.backgroundImage = 'url(' + imgs[i].getAttribute("src") + ')';
+                        break;
+                    case "default":
+                        imgs[i].style.width = "initial";
+                        break;
+                    default:
+                        break;
                 }
-                var text = document.createTextNode(alt);
-                p.appendChild(text);
-                div.appendChild(p);
-                insertAfter(div, imgs[i]);
+                if(text){
+                    var div = document.createElement("div");
+                    div.setAttribute("class", "imgAlt")
+                    var p = document.createElement("p");
+                    var text = document.createTextNode(alt);
+                    p.appendChild(text);
+                    div.appendChild(p);
+                    insertAfter(div, imgs[i]);
+                }
             }
         }
     })();
 
-   
+        // adjust homePage imags
+    (function() {
+        var page = document.getElementById("page");
+        if (page) {
+            var imgs = page.getElementsByTagName("img");
+            for (var i = 0, len = imgs.length; i < len; i++) {
+                var alt = imgs[i].getAttribute("alt");
+                if(alt.indexOf("default")!=-1){
+                     imgs[i].style.width = "initial";
+                    continue;
+                }
+                var imgWidth = imgs[i].clientWidth;
+                imgs[i].style.height = imgWidth * 9 / 16 + "px";
+            }
+        }
+    })();   
 
 
 
