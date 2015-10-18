@@ -220,30 +220,6 @@ window.addEventListener("load",function(){
     })();
 
 
-     // trigger menu
-    (function() {
-        function getStyle(elem, styleName) {
-            var style;
-            if (window.getComputedStyle) {
-                style = getComputedStyle(elem, null);
-            } else {
-                style = elem.currentStyle;
-            }
-            return style[styleName];
-        }
-
-        var trigger = document.getElementById('drop-down');
-        var menu = document.getElementById("drop-target");
-        trigger.addEventListener("click", function() {
-            var display = getStyle(menu,'display');
-            if(display == "block"){
-                menu.style.display = 'none';
-            }else{
-                menu.style.display = 'block';
-            }
-        });
-    })();
-
      // toTop
     (function() {
 
