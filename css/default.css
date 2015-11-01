@@ -431,10 +431,8 @@ time{
 }
 
 pre{
-background-color: #333;
-  padding: 2em;
-  margin: 2em 0;
-  border: 1px solid #919191;
+  background-color: #fff;
+  padding: 1em;
 }
 
 pre code{
@@ -444,7 +442,6 @@ pre code{
 li>ol{
   margin-left:2em;
 }
-
 
 li>ul{
   margin-left:2em;
@@ -501,15 +498,9 @@ a#go-next-img{
 }
 
 
-pre{
-  margin: 2em;
-  padding: 1em;
-  border: 1px solid #919191;
-}
-
 iframe{
-  padding-bottom: 3em;
-  padding-top: 2em;
+  padding-top: 1em;
+  padding-bottom: 2em;
   margin: auto;
   display: block;
 }

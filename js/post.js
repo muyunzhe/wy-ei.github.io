@@ -32,7 +32,7 @@ window.addEventListener("load",function(){
                 text = null;
             }else{
                 option = alt.slice(0,index);
-                text = alt.slice(index);
+                text = alt.slice(index+1);
             }
             
             if (option) {
@@ -73,8 +73,8 @@ window.addEventListener("load",function(){
                     var div = document.createElement("div");
                     div.setAttribute("class", "imgAlt")
                     var p = document.createElement("p");
-                    var text = document.createTextNode(alt);
-                    p.appendChild(text);
+                    var textNode = document.createTextNode(text);
+                    p.appendChild(textNode);
                     div.appendChild(p);
                     insertAfter(div, imgs[i]);
                 }
