@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 计算机存储体系介绍（写给外行）
+title: 写给初学者的计算机存储体系介绍
 category: cs
 tag: 理解计算机
 ---
