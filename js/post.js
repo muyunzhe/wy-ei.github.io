@@ -1,9 +1,6 @@
 var windowWidth = (document.documentElement && document.documentElement.clientWidth) || document.body.clientWidth;
 var windowHeight = (document.documentElement && document.documentElement.clientHeight) || document.body.clientHeight;
 window.addEventListener("load",function(){
-
-
-
     // add Image alt and adjust image size
     (function() {
         var content = document.getElementById("content");

@@ -25,11 +25,14 @@ body>header{
   background-repeat: no-repeat;
   background-size: 100% 360px;
   padding: 240px 0 20px 0;
+  position: relative;
 }
 
 body>header div,body>header>nav{
   width: 60%;
   margin:auto;
+  position: relative;
+  z-index: 10;
 }
 
 body>header h1{
@@ -513,7 +516,7 @@ iframe[src*='music']{
 @media screen and (max-width: 900px){
   body>header{
     padding-top: 150px;
-    background-size: 100% 270px;
+    background-size: 100% 280px;
   }
   body>header>div,body>header>nav{
     width: 95%;
@@ -532,4 +535,62 @@ iframe[src*='music']{
   }
 }
 
+.snow-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
 
+.snow{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 330px;
+  background-image: url(../images/bg/snow.png);
+  background-repeat: repeat;
+}
+
+
+@keyframes down1{
+  0%{
+    top:0px;
+  }
+  100%{
+    top: 330px;
+  }
+}
+
+@keyframes down2{
+  0%{
+    top:-330px;
+  }
+  100%{
+    top: 0px;
+  }
+}
+
+.snow1{
+  -webkit-animation: down1 30s linear infinite;
+  -o-animation: down1 30s linear infinite;
+  animation: down1 30s linear infinite;
+}
+.snow3{
+  -webkit-animation: down2 30s linear infinite;
+  -o-animation: down2 30s linear infinite;
+  animation: down2 30s linear infinite;
+}
+.snow2{
+  -webkit-animation: down1 30s linear infinite;
+  -o-animation: down1 30s linear infinite;
+  animation: down1 30s linear infinite;
+}
+.snow4{
+  -webkit-animation: down2 30s linear infinite;
+  -o-animation: down2 30s linear infinite;
+  animation: down2 30s linear infinite;
+}
