@@ -7,8 +7,6 @@ body{
 
 body a{
   color: #616161;
-  -webkit-transition: 500ms;
-  -o-transition: 500ms;
   transition: 500ms;
 }
 body a:hover{
@@ -190,8 +188,6 @@ img#bg{
   display: block;
   width: 70%;
   margin: auto;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
   transition: 1s;
 }
 
@@ -423,8 +419,6 @@ time{
 #home a{
   color: #000;
   opacity: 0.7;
-  -webkit-transition: 500ms;
-  -o-transition: 500ms;
   transition: 500ms;
   text-decoration: none;
 }
@@ -553,8 +547,23 @@ iframe[src*='music']{
   height: 330px;
   background-image: url(../images/bg/snow.png);
   background-repeat: repeat;
+  background-size: 35%;
 }
 
+@media screen and (max-width: 900px){
+  .snow{
+    background-size: 65%;
+  }
+}
+
+@-webkit-keyframes down1{
+  0%{
+    top:0px;
+  }
+  100%{
+    top: 330px;
+  }
+}
 
 @keyframes down1{
   0%{
@@ -562,6 +571,15 @@ iframe[src*='music']{
   }
   100%{
     top: 330px;
+  }
+}
+
+@-webkit-keyframes down2{
+  0%{
+    top:-330px;
+  }
+  100%{
+    top: 0px;
   }
 }
 
@@ -576,21 +594,17 @@ iframe[src*='music']{
 
 .snow1{
   -webkit-animation: down1 30s linear infinite;
-  -o-animation: down1 30s linear infinite;
   animation: down1 30s linear infinite;
 }
 .snow3{
   -webkit-animation: down2 30s linear infinite;
-  -o-animation: down2 30s linear infinite;
   animation: down2 30s linear infinite;
 }
 .snow2{
   -webkit-animation: down1 30s linear infinite;
-  -o-animation: down1 30s linear infinite;
   animation: down1 30s linear infinite;
 }
 .snow4{
   -webkit-animation: down2 30s linear infinite;
-  -o-animation: down2 30s linear infinite;
   animation: down2 30s linear infinite;
 }
