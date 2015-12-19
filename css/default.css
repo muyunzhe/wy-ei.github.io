@@ -24,6 +24,11 @@ body>header{
   background-size: 100% 360px;
   padding: 240px 0 20px 0;
   position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 body>header div,body>header>nav{
@@ -180,10 +185,6 @@ section>article>header>h1{
   text-indent: 0;
 }
 
-img#bg{
-  width: 100%;
-}
-
 .content img{
   display: block;
   width: 70%;
@@ -221,20 +222,20 @@ p.end{
 }
 
 
-p.lastpage,p.nextpage{
+p.last-page,p.next-page{
   display: inline;
 }
 
-p.nextpage{
+p.next-page{
   float: right;
 }
 
-p.lastpage a,p.nextpage a{
+p.last-page a,p.next-page a{
   color: #616161;
   text-decoration: none;
 }
 
-p.lastpage a:hover,p.nextpage a:hover{
+p.last-page a:hover,p.next-page a:hover{
   color: #E50053;
 }
 
@@ -304,7 +305,7 @@ body>footer>p{
 
 
 
-#toTop{
+#to-top{
   position: fixed;
   bottom: 1.5em;
   right: .5em;
@@ -314,7 +315,7 @@ body>footer>p{
   cursor: pointer;
 }
 
-#toTop:hover{
+#to-top:hover{
   opacity: 0.7;
 }
 
@@ -325,11 +326,11 @@ body>footer>p{
    border-bottom: 1px solid #d9d9d9;
 }
 
-.imgAlt{
+.img-alt-wrap{
   text-align: center;
 }
 
-.imgAlt>p{
+.img-alt-wrap>p{
   display: inline-block;
   text-indent: 0px;
   font-style: italic;
@@ -351,33 +352,7 @@ div#show{
   color:#E50053;
 }
 
-#index{
-    border-bottom:1px solid #d7d7d7;  
-    margin-bottom: 2em;
-    padding-bottom: 2em;
-    margin-top:2em;
-}
-
-#index h2{
-    margin-bottom:.7em;
-}
-
-#index ul{
-  list-style: none;
-  padding:0;
-  margin:0;  
-}
-
-#index li{
-  list-style-type: none; 
-}
-
-#index>ul>li>ul{
-    padding:0;
-    padding-left: 2em;
-}
-
-#home li{
+#home>ul>li{
   list-style: none;
   margin-bottom: 5em; 
 }
@@ -506,12 +481,36 @@ iframe[src*='music']{
   width: 100%;  
 }
 
-
-@media screen and (max-width: 900px){
-  body>header{
+@media screen and (max-width: 500px){
+    body>header{
     padding-top: 150px;
     background-size: 100% 280px;
   }
+}
+
+.info-box{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  height: 30px;
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 1000;
+}
+.info-box:hover{
+  opacity: 0;
+}
+.info-box p{
+  line-height: 30px;
+}
+
+
+
+
+@media screen and (max-width: 1024px){
   body>header>div,body>header>nav{
     width: 95%;
   }
@@ -526,6 +525,24 @@ iframe[src*='music']{
 
   .content img{
     width: 100%;
+  }
+  .info-box{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 150px;
+    height: 15px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1000;
+  }
+  .info-box:hover{
+    opacity: 0;
+  }
+  .info-box p{
+    line-height: 15px;
   }
 }
 
@@ -544,13 +561,12 @@ iframe[src*='music']{
   top: 0;
   left: 0;
   width: 100%;
-  height: 330px;
   background-image: url(../images/bg/snow.png);
   background-repeat: repeat;
   background-size: 35%;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1024px){
   .snow{
     background-size: 65%;
   }
@@ -592,19 +608,5 @@ iframe[src*='music']{
   }
 }
 
-.snow1{
-  -webkit-animation: down1 30s linear infinite;
-  animation: down1 30s linear infinite;
-}
-.snow3{
-  -webkit-animation: down2 30s linear infinite;
-  animation: down2 30s linear infinite;
-}
-.snow2{
-  -webkit-animation: down1 30s linear infinite;
-  animation: down1 30s linear infinite;
-}
-.snow4{
-  -webkit-animation: down2 30s linear infinite;
-  animation: down2 30s linear infinite;
-}
+
+

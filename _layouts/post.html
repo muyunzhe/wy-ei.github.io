@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-<section>
+<section id="post">
     <article>
         <header>
            <time class="date"><i class="fa fa-calendar fa-fw"></i> {{ page.date|date:"%Y-%m-%d" }}</time>
@@ -12,23 +12,23 @@ layout: default
             </h1>
         </header>
 
-        <div class="content" id="content">
+        <div class="content" id="article">
             {{ content }}
         </div>
 
         <footer>
         {% if page.previous %}
-              <p class="lastpage"><i class="fa fa-angle-double-left fa-fw"></i>上一篇：<a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a></p>
+              <p class="last-page"><i class="fa fa-angle-double-left fa-fw"></i>上一篇：<a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a></p>
         {% endif %}
 
         {% if page.next %}
-              <p class="nextpage">下一篇：<a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a><i class="fa fa-angle-double-right fa-fw"></i></p>
+              <p class="next-page">下一篇：<a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a><i class="fa fa-angle-double-right fa-fw"></i></p>
         {% endif %}
         </footer>
     </article>
     <div id="show">
     <p>希望添加评论？<b id='add-comment'>点击这里</b></p>
-</div>
+    </div>
 </section>
 
 <section id="comment" style="display: none;">
