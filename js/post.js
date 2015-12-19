@@ -59,26 +59,26 @@ $(function(){
         }
     });
 
-    // js 实现动画效果
-    (function(){
-        var $header = $('#header'),
-            headerHeight = $header.height() + parseInt($header.css('paddingTop')) + parseInt($header.css('paddingBottom')),
-            $snow1 = $('.snow1'),
-            $snow2 = $('.snow2'),
-            top1 =  - headerHeight,
-            top2 = 0;
-        $('.snow').height(headerHeight);
-        setInterval(function(){
-            $snow1.css('top',top1);
-            $snow2.css('top',top2);
-            top1 += 2;
-            top2 += 2;
-            if(top1 > 0){
-                top1 = - headerHeight;
-                top2 = 0;
-            }
-        },200);
-    })();
+    // // js 实现动画效果
+    // (function(){
+    //     var $header = $('#header'),
+    //         headerHeight = $header.height() + parseInt($header.css('paddingTop')) + parseInt($header.css('paddingBottom')),
+    //         $snow1 = $('.snow1'),
+    //         $snow2 = $('.snow2'),
+    //         top1 =  - headerHeight,
+    //         top2 = 0;
+    //     $('.snow').height(headerHeight);
+    //     setInterval(function(){
+    //         $snow1.css('top',top1);
+    //         $snow2.css('top',top2);
+    //         top1 += 2;
+    //         top2 += 2;
+    //         if(top1 > 0){
+    //             top1 = - headerHeight;
+    //             top2 = 0;
+    //         }
+    //     },200);
+    // })();
 
     // 此段代码 , 不解释 -_-
     (function(){

@@ -63,4 +63,9 @@ gulp.task('css',function(){
         .pipe(gulp.dest('css/build'));
 });
 
-gulp.task('default', ['img', 'js'], function () {});
+gulp.task('watch',function(){
+    gulp.watch('js/*.js',['js']);
+    gulp.watch('css/*.css',['css']);
+});
+
+gulp.task('default', ['img', 'js','css']);
