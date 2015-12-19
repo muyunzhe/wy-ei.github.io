@@ -4,8 +4,9 @@ var
     exec = require('child_process').exec,
     fs = require('fs'),
     uglify = require('gulp-uglify'),
-    concat = require('gulp-concat');
-//    rename = require('gulp-rename');
+    concat = require('gulp-concat'),
+    minify = require('gulp-minify-css'),
+    rename = require('gulp-rename');
 
 gulp.task('compress', function () {
     var imgPath = './images';
@@ -49,15 +50,17 @@ gulp.task('img', function () {
 
 gulp.task('js', function () {
     gulp.src('js/*.js')
-        .pipe(concat('app.min.js'))
+        .pipe(concat('app.js'))
+        .pipe(rename({suffix:'.min'}))
         .pipe(uglify())
-        .pipe(gulp.dest('js/bulid'));
+        .pipe(gulp.dest('js/build'));
 });
 
-// gulp.task('css',function(){
-//     gulp.src('css/*.css')
-//         .pipe(cssUglify())
-//         .pipe(gulp.dest('css/bulid'));
-// });
+gulp.task('css',function(){
+    gulp.src('css/default.css')
+        .pipe(rename({suffix:'.min',basename:'style'}))
+        .pipe(minify())
+        .pipe(gulp.dest('css/build'));
+});
 
 gulp.task('default', ['img', 'js'], function () {});
