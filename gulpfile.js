@@ -57,8 +57,9 @@ gulp.task('js', function () {
 });
 
 gulp.task('css',function(){
-    gulp.src('css/default.css')
-        .pipe(rename({suffix:'.min',basename:'style'}))
+    gulp.src('css/*.css')
+        .pipe(concat('style.css'))
+        .pipe(rename({suffix:'.min'}))
         .pipe(minify())
         .pipe(gulp.dest('css/build'));
 });

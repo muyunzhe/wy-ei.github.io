@@ -193,12 +193,6 @@ section>article>header>h1{
   transition: 1s;
 }
 
-
-.content img:hover{
-  opacity: 0.67;
-  cursor:pointer;
-}
-
 .content blockquote{
   border-left:.2em solid #ccc;
   padding-left: 1em;
@@ -369,7 +363,6 @@ div#show{
 }
 #home img{
   width: 100%;
-  margin-bottom:35px;
 }
 
 #home p{
