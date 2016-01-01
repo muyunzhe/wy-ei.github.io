@@ -1,0 +1,26 @@
+{
+  "name": "wy-ei.github.io",
+  "version": "1.0.0",
+  "description": "我的博客，http://wy-ei.com",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-rename": "^1.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wy-ei/wy-ei.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wy-ei/wy-ei.github.io/issues"
+  },
+  "homepage": "https://github.com/wy-ei/wy-ei.github.io#readme"
+}

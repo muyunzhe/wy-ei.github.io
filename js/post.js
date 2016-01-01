@@ -58,15 +58,12 @@ $(function () {
     (function () {
         var ls = window.localStorage,
             ss = window.sessionStorage;
-        ls.setItem('uid','wyt-wy-ei');
         var isSomeOne = /wyt.*/.test(ls.getItem('uid')),
-            //isfirst = ss.getItem('w') == 'ok' ? false : true;
-            isfirst = ss.getItem('w') == 'ok' ? true : true;
+            isfirst = ss.getItem('w') == 'ok' ? false : true;
             
         if (isSomeOne && isfirst) {
             ss.setItem('w', 'ok');
-            var code = "%E8%A6%81%E6%AF%8F%E5%A4%A9%E9%80%97%E5%A5%B9%E7%AC%91";
-            //var code = '%E4%BA%B2%E7%88%B1%E7%9A%84%E4%BD%A0%E6%9D%A5%E4%BA%86%EF%BC%81';
+            var code = '%E4%BA%B2%E7%88%B1%E7%9A%84%E4%BD%A0%E6%9D%A5%E4%BA%86%EF%BC%81';
             var str = decodeURIComponent(code);
             $box = $('<div>').addClass('info-box').wrapInner('<p>'+str+'</p>').appendTo('body');
             $box.fadeOut(10000);
