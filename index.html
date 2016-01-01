@@ -5,28 +5,26 @@ title: 最近发布
 
 
 
-<div id="home">
-    <ul>
-    {% for i in (0..4) %}
-        <li>
-            <time class="date"><i class="fa fa-calendar fa-fw"></i> {{ site.posts[i].date|date:"%Y-%m-%d" }}</time>
+<div class="home-page">
 
-            <p class="title"><a href="{{ site.posts[i].url }}">{{ site.posts[i].title }}</a>
-            </p>
-            <div>
-              {% if site.excerpt_separator %}
-                {{ site.posts[i].excerpt }}
-            {% else %}
-                {{ site.posts[i].content}}
-            {% endif %}
-            </div>
-            
-
-            <p class="readmore"><a href="{{ site.posts[i].url }}">阅读全文&gt;&gt;</a></p>
-            {% if site.posts[i].tag %}
-            <p class="tag">#{{ site.posts[i].tags[0] }}</p>
-            {% endif %}
-        </li>
-    {% endfor %}
-    </ul>
+{% for i in (0..4) %}
+    <article>
+        <header>
+          <time class="date"><i class="fa fa-calendar fa-fw"></i> {{ site.posts[i].date|date:"%Y-%m-%d" }}</time>
+          <h2 class="title"><a href="{{ site.url }}{{ site.posts[i].url }}">{{ site.posts[i].title }}</a></h2>
+        </header>
+        <div class="content">
+          {% if site.excerpt_separator %}
+            {{ site.posts[i].excerpt }}
+          {% else %}
+            {{ site.posts[i].content | slice: 0,400 }}
+          {% endif %}
+          <p class="readmore"><a href="{{ site.posts[i].url }}">阅读全文&gt;&gt;</a></p>
+          {% if site.posts[i].tag %}
+          <p class="tag">#{{ site.posts[i].tags[0] }}</p>
+          {% endif %}
+        </div>
+    </article>
+{% endfor %}
+  
 </div>

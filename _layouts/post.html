@@ -1,40 +1,32 @@
 ---
-layout: default
+layout: default 
 ---
 
 
-<section id="post">
-    <article>
-        <header>
-           <time class="date"><i class="fa fa-calendar fa-fw"></i> {{ page.date|date:"%Y-%m-%d" }}</time>
-
-            <h1 class="title">{{ page.title }}
-            </h1>
-        </header>
-
-        <div class="content" id="article">
-            {{ content }}
-        </div>
-
-        <footer>
-        {% if page.previous %}
-              <p class="last-page"><i class="fa fa-angle-double-left fa-fw"></i>上一篇：<a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a></p>
-        {% endif %}
-
-        {% if page.next %}
-              <p class="next-page">下一篇：<a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a><i class="fa fa-angle-double-right fa-fw"></i></p>
-        {% endif %}
-        </footer>
-    </article>
-    <div id="show">
-    <p>希望添加评论？<b id='add-comment'>点击这里</b></p>
-    </div>
-</section>
-
-<section id="comment" style="display: none;">
-    {% include comment %} 
-    <div id="disqus_container">
-        <div class="ds-thread" data-thread-key={{ page.id }} data-title={{ page.title }} data-url="wy-ei.com/{{ page.url }}"></div>        
-    </div>
-</section>
-
+<article>
+  <header class="page-header">
+      {% if page.date %}
+        <time class="date"><i class="fa fa-calendar fa-fw"></i> {{ page.date|date:"%Y-%m-%d" }}</time>
+      {% endif %}
+      <h1>{{ page.title }}</h1>
+  </header>
+  <div class="content">
+      {{ content }}
+  </div>
+  <footer>
+      {% if page.previous %}
+      <p class="last-page"><i class="fa fa-angle-double-left fa-fw"></i>上一篇：<a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a></p>
+      {% endif %} {% if page.next %}
+      <p class="next-page">下一篇：<a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a><i class="fa fa-angle-double-right fa-fw"></i></p>
+      {% endif %}
+  </footer>
+</article>
+{% if page.comment != false %}
+  <div id="show">
+    <p id='add-comment'>点击这里，添加评论</p>
+  </div>
+  <div id="comment" style="display: none;">
+      {% include comment %}
+      <div class="ds-thread" data-thread-key={{ page.id }} data-title={{ page.title }} data-url={{ site.url }}/{{ page.url }}></div>
+  </div>
+{% endif %}

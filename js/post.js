@@ -12,7 +12,9 @@ $(function () {
 
     // 展开评论
     $('#add-comment').click(function () {
-        $('#comment').show();
+        $('#comment').show().queue(function(){
+            $('body').scrollTop($('body').height() - $(window).height());
+        });
         $('#show').remove();
     });
 
@@ -21,7 +23,7 @@ $(function () {
     // hbg：将其设置为 header 的背景图片
     // both：将其宽度设置为100%，并设置为 header 的背景
     // 将余下的 alt 内容添加在图片下方
-    $('#post .content img,#page .content img').each(function (i, img) {
+    $('.content img').each(function (i, img) {
         var $this = $(img),
             alt = $this.attr('alt');
         if (!alt) {

@@ -1,19 +1,12 @@
 ---
-layout:           default
+layout: default
 ---
 
-<section id="page">
-    <article>
-        <header>
-            <h1>{{ page.title }}</h1>
-            <p>{{ page.date|date:"%Y-%m-%d" }}</p> 
-        </header>
 
-        <div class="content">
-            {{ content }}
-        </div>
-    </article>
-</section>
-
+<header class="page-header">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.date|date:"%Y-%m-%d" }}</p> 
+</header>
+{{ content }}
 
 

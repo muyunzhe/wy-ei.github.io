@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: post
 title: 关于
+comment: false
 ---
 
 ### 关于本站
