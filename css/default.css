@@ -3,7 +3,7 @@
 body{
   color: #616161;
   position: relative;
-  font-family:"calluna-sans",Helvetica, Hiragino Sans GB, Microsoft JhengHei, WenQuanYi Micro Hei, sans-serif;
+  font-family:-apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
 }
 
 body a{
@@ -87,13 +87,18 @@ a:hover{
 /* header font */
 
 h1{
-  font-size: 24px;
-  font-weight: lighter;
+  font-size: 28px;
+  font-weight: normal;
 }
 
 h2{
+  font-size: 24px;
+  font-weight: normal;
+}
+
+h3{
   font-size: 20px;
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 body>header li{
@@ -266,9 +271,16 @@ body>footer>p{
   text-indent: 0px;
 }
 
+
 .article-list>li>p{
   display: inline;
-  text-indent: 0;
+  -webkit-transition: 900 ms;
+  -o-transition: 900 ms;
+  transition: 900 ms;
+}
+
+.article-list>li>p:hover{
+  margin-left: 10px;
 }
 
 .article-list>li a{

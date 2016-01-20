@@ -1,7 +1,7 @@
 $(function () {
     // 添加回到顶部图标
     $('<div>').attr('id', 'to-top').appendTo('body').click(function () {
-        $(document.body).animate({scrollTop:0}, 1000);
+        $(document.body).animate({scrollTop:0}, 800,'swing');
         return false;
     });
 
