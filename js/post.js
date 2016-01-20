@@ -1,13 +1,8 @@
 $(function () {
     // 添加回到顶部图标
     $('<div>').attr('id', 'to-top').appendTo('body').click(function () {
-        (function scroll() {
-            var scrollTop = $(document).scrollTop();
-            if (scrollTop != 0) {
-                $(document).scrollTop(scrollTop / 1.3 - 10);
-                setTimeout(scroll, 100);
-            }
-        })();
+        $(document.body).animate({scrollTop:0}, 1000);
+        return false;
     });
 
     // 展开评论
@@ -15,7 +10,7 @@ $(function () {
         $('#comment').show().queue(function(){
             $('body').scrollTop($('body').height() - $(window).height());
         });
-        $('#show').remove();
+        $('.show-comment').remove();
     });
 
     // 读取图片的 alt 信息，根据其内容修改页面
@@ -68,12 +63,12 @@ $(function () {
             $box = $('<div>').addClass('info-box').wrapInner('<p>'+str+'</p>').appendTo('body');
             $box.fadeOut(10000);
             $box.hover(function () {
-                    $box.css('opacity', 1);
-                    $box.stop();
-                },
-                function () {
-                    $box.fadeOut(10000);
-                });
+                $box.css('opacity', 1);
+                $box.stop();
+            },
+            function () {
+                $box.fadeOut(10000);
+            });
         }
     })();
 

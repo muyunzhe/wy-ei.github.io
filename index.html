@@ -5,7 +5,7 @@ title: 最近发布
 
 
 
-<div class="home-page">
+<div class="home">
 
 {% for i in (0..4) %}
     <article>
@@ -17,9 +17,9 @@ title: 最近发布
           {% if site.excerpt_separator %}
             {{ site.posts[i].excerpt }}
           {% else %}
-            {{ site.posts[i].content | slice: 0,400 }}
+            {{ site.posts[i].content | slice: 0, 400 }}
           {% endif %}
-          <p class="readmore"><a href="{{ site.posts[i].url }}">阅读全文&gt;&gt;</a></p>
+          <p class="read-more"><a href="{{ site.posts[i].url }}">阅读全文&gt;&gt;</a></p>
           {% if site.posts[i].tag %}
           <p class="tag">#{{ site.posts[i].tags[0] }}</p>
           {% endif %}

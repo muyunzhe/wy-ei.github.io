@@ -15,14 +15,14 @@ layout: default
   </div>
   <footer>
       {% if page.previous %}
-      <p class="last-page"><i class="fa fa-angle-double-left fa-fw"></i>上一篇：<a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a></p>
+      <p class="last-page"><i class="fa fa-angle-double-left fa-fw"></i>上一篇：<a href="{{ site.url }}{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a></p>
       {% endif %} {% if page.next %}
-      <p class="next-page">下一篇：<a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a><i class="fa fa-angle-double-right fa-fw"></i></p>
+      <p class="next-page">下一篇：<a href="{{ site.url }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a><i class="fa fa-angle-double-right fa-fw"></i></p>
       {% endif %}
   </footer>
 </article>
 {% if page.comment != false %}
-  <div id="show">
+  <div class="show-comment">
     <p id='add-comment'>点击这里，添加评论</p>
   </div>
   <div id="comment" style="display: none;">

@@ -104,78 +104,6 @@ body>header li{
   display: none;
 }
 
-.info-box{
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 300px;
-  height: 30px;
-  padding: 20px;
-  background-color: #eee;
-  border-radius: 5px;
-  text-align: center;
-  z-index: 1000;
-}
-.info-box:hover{
-  opacity: 0;
-}
-.info-box p{
-  line-height: 30px;
-}
-
-.snow-container{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.snow{
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 660px;
-  background-image: url(/images/bg/snow.png);
-  background-repeat: repeat;
-  background-size: 35%;
-  -webkit-backface-visibility:hidden; 
--webkit-perspective:1000;
-  webkit-transform: translateZ(0); 
--webkit-transform: translateZ(0); 
-  transform: translateZ(0);
-  -webkit-animation: down1 30s linear infinite;
-  animation: down1 30s  linear infinite;
-}
-
-@media screen and (max-width: 1024px){
-  .snow{
-    background-size: 65%;
-  }
-}
-
-@-webkit-keyframes down1{
-  0%{
-    top:-330px;
-  }
-  100%{
-    top: 0px;
-  }
-}
-
-@keyframes down1{
-  0%{
-    top:-330px;
-  }
-  100%{
-    top: 0px;
-  }
-}
-
-
 
 
 /* container layout */
@@ -374,26 +302,19 @@ body>footer>p{
   border-bottom: 1px solid #d9d9d9;
 }
 
-
-div#show{
+.show-comment{
   margin: 50px auto;
 }
 
-#show p{
+.show-comment p{
   cursor: pointer;
   display: inline;
   padding-bottom: 3px;
   border-bottom: 1px solid #ccc;
 }
-
-#show p:hover{
+.show-comment p:hover{
   color:#E50053;
 }
-
-
-
-
-
 
 time{
   font-size: 0.8em;
@@ -486,21 +407,99 @@ iframe[src*='music']{
   background-color: #eee;   
 }
 
-.home-page>article{
+.home>article{
   margin-bottom: 100px;
 }
-.home-page>article>header{
+.home>article>header{
   margin-bottom: 30px;
 }
-.home-page>article>header>h2{
+.home>article>header>h2{
   margin-top: 10px;
 }
 
-.home-page>article>header a{
+.home>article>header a{
   text-decoration: none;
 }
 
-.home-page .tag{
+.home .tag{
   color: #bbb;
   font-size: .8em;
+}
+
+.snow-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.snow{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 660px;
+  background-image: url(/images/bg/snow.png);
+  background-repeat: repeat;
+  background-size: 35%;
+  -webkit-backface-visibility:hidden; 
+  -webkit-perspective:1000;
+  webkit-transform: translateZ(0); 
+  -webkit-transform: translateZ(0); 
+  transform: translateZ(0);
+  -webkit-animation: down1 30s linear infinite;
+  animation: down 30s  linear infinite;
+}
+
+@media screen and (max-width: 1024px){
+  .snow{
+    background-size: 65%;
+  }
+}
+
+@-webkit-keyframes down{
+  0%{
+    top:-330px;
+  }
+  100%{
+    top: 0px;
+  }
+}
+
+@keyframes down{
+  0%{
+    top:-330px;
+  }
+  100%{
+    top: 0px;
+  }
+}
+
+.info-box{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  height: 30px;
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 1024px){
+  .info-box{
+    width: 100px;
+  }
+}
+
+.info-box:hover{
+  opacity: 0;
+}
+.info-box p{
+  line-height: 30px;
 }
