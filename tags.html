@@ -1,0 +1,41 @@
+---
+layout: page
+title: 标签
+---
+
+<div class="tag-cloud">
+{% for tag in site.tags %}
+  <a href="#{{ tag[0] }}">{{ tag[0] }}</a>
+{% endfor %}  
+</div>
+
+<ul class="tag-list">
+{% for tag in site.tags %}
+  <li>
+      <h2 id="{{ tag[0] }}"><i class="fa fa-tag fa-fw"></i>{{ tag[0] }}</h2>
+      <ul>
+      {% for post in tag[1] %}
+        <li>
+          <a href="{{ post.url }}">
+          <h3>{{ post.title }}</h3>
+          <p class="date">{{ post.date|date:"%Y-%m-%d" }}</p>
+          </a>
+        </li>
+      {% endfor %}
+      </ul>
+  </li>
+{% endfor %}
+</ul>
+
+
+<script type="text/javascript">
+
+    var color = ['#F19BCE','#BE9EE8','#52B7CE','#B88FCE','#F56FF1','#FEC58B'];
+    var len = color.length;
+    var as = document.querySelectorAll('.tag-cloud>a');
+    for(var i=0;i<as.length;i++){
+      var j = Math.floor(Math.random()*len);
+      as[i].style.backgroundColor = color[j];
+    }
+</script>
+

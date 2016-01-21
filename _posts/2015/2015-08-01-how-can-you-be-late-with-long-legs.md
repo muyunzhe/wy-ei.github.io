@@ -2,7 +2,7 @@
 layout: post
 category: opinion
 title: 腿这么长，还迟到！
-tag: 高中
+tag: [高中,回忆]
 ---
 
 ![](/images/blog/2015/late.jpg)

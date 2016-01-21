@@ -1,7 +1,7 @@
 ---
 layout: post
 category: opinion
-tag: 小王子
+tag: [电影,小王子]
 title: 星空下，我看到了小王子
 ---
 

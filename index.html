@@ -21,7 +21,7 @@ title: 最近发布
           {% endif %}
           <p class="read-more"><a href="{{ site.posts[i].url }}">阅读全文&gt;&gt;</a></p>
           {% if site.posts[i].tag %}
-          <p class="tag">#{{ site.posts[i].tags[0] }}</p>
+          <p class="tag"><a href="/tags.html#{{ site.posts[i].tags[0] }}">#{{ site.posts[i].tags[0] }}</a></p>
           {% endif %}
         </div>
     </article>

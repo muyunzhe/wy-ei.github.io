@@ -3,7 +3,7 @@ layout: post
 title: 其实我是个傻子
 description: 有些人认为自己很聪明，事实上它们是知足的傻子。
 category: opinion
-tag: 感想
+tag: 感悟
 ---
 
 > 有些人认为自己很聪明，事实上它们是知足的傻子。

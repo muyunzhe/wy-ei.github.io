@@ -2,7 +2,7 @@
 layout: post
 title: 那帮爱打篮球的家伙
 category: opinion
-tag: 篮球
+tag: [篮球,兄弟]
 ---
 
 ![bg](/images/bg/nbafinals.jpg)

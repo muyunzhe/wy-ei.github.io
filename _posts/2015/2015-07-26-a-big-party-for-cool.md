@@ -2,7 +2,7 @@
 layout: post
 title: 一场狂欢，向酷致敬
 category: opinion
-tag: 酷
+tag: 感悟
 ---
 
 ![bg-Be Awesome](/images/bg/awesome.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 那些特立独行的人们
-tag: 特立独行
+tag: 观点
 category: opinion
 ---
 

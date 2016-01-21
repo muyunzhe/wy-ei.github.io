@@ -2,7 +2,7 @@
 layout: post
 title: 有谁在乎你
 category: opinion
-tag: 朋友
+tag: 个人修养
 ---
 
 ![bg](/images/bg/2015-07-13.jpg)

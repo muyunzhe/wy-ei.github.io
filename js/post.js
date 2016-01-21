@@ -13,6 +13,7 @@ $(function () {
         $('.show-comment').remove();
     });
 
+
     // 读取图片的 alt 信息，根据其内容修改页面
     // bg：设置宽度为100%，宽高比为 16：9
     // hbg：将其设置为 header 的背景图片
@@ -48,28 +49,4 @@ $(function () {
             $('<div>').addClass('img-alt-wrap').wrapInner('<p>'+altText+'</p>').insertAfter($this);
         }
     });
-
-    // 此段代码 , 不解释 -_-
-    (function () {
-        var ls = window.localStorage,
-            ss = window.sessionStorage;
-        var isSomeOne = /wyt.*/.test(ls.getItem('uid')),
-            isfirst = ss.getItem('w') == 'ok' ? false : true;
-            
-        if (isSomeOne && isfirst) {
-            ss.setItem('w', 'ok');
-            var code = '%E4%BA%B2%E7%88%B1%E7%9A%84%E4%BD%A0%E6%9D%A5%E4%BA%86%EF%BC%81';
-            var str = decodeURIComponent(code);
-            $box = $('<div>').addClass('info-box').wrapInner('<p>'+str+'</p>').appendTo('body');
-            $box.fadeOut(10000);
-            $box.hover(function () {
-                $box.css('opacity', 1);
-                $box.stop();
-            },
-            function () {
-                $box.fadeOut(10000);
-            });
-        }
-    })();
-
 });

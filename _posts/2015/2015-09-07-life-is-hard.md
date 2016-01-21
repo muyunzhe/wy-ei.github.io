@@ -2,7 +2,7 @@
 layout: post
 title: 生活本就不易
 category: opinion
-tag: life
+tag: 生活
 ---
 
 ![bg](/images/bg/BingWallpaper-2015-09-08.jpg)
