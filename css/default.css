@@ -220,7 +220,7 @@ h1,h2,h3,h4,h5,h6{
 
 .content img{
   display: block;
-  width: 70%;
+  max-width: 100%;
   margin: auto;
   transition: 1s;
   border:1px solid #ccc;
@@ -229,12 +229,20 @@ h1,h2,h3,h4,h5,h6{
 .content blockquote{
   border-left:.2em solid #ccc;
   padding-left: 1em;
+  margin: 0;
 }
 
 .content blockquote>p{
   text-indent: .7em;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bolder;
+}
+
+.content hr{
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
+  margin-bottom: 0.6em;
+  height: 10px;
 }
 
 p.end{
@@ -265,7 +273,7 @@ p.last-page a:hover,p.next-page a:hover{
   color: #E50053;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 768px){
   p.last-page,p.next-page{
     display: block;
     float: none;
@@ -301,41 +309,32 @@ body>footer>p{
 
 .article-list{
   margin: 80px 0;
-  border-left: 1px solid #ccc;
-  padding-left: 25px;
 }
 .article-list li{
-  position: relative;
-  margin-bottom: 10px;
-  line-height: 2.1em;
-  list-style-type: none;
+  list-style: none;
   text-indent: 0px;
+  border-bottom: 1px solid #ccc;
 }
-.article-list .title{
-  display: inline;
+.article-list li:first-of-type{
+  border-top: 1px solid #ccc;
+}
+.article-list h3{
   font-size: 1.1em;
-  padding-right: 5px;
+  display: inline;
+}
+.article-list p{
+  display: inline;
+  margin-left: 10px;
+  font-size: 0.9em;
+  color: #666;
 }
 
 .article-list>li a{
   text-decoration: none;
+  padding: 20px 0;
+  display: block;
 }
 
-.article-list>li::after{
-  content: '';
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  position: absolute;
-  left: -28px;
-  background-color: #ccc;
-  top: 12px;
-}
-.article-list .date{
-  color: #666;
-  display: inline;
-  font-size: 0.9em;
-}
 
 .tag-cloud a{
   color: #fff;
@@ -467,6 +466,17 @@ iframe[src*='music']{
 @media screen and (max-width: 1024px){
   
   .main-container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body>footer>p{
+    width: 70%;
+    margin:.2em auto; 
+  }
+}
+@media screen and (max-width: 768px){
+  .main-container {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -477,6 +487,7 @@ iframe[src*='music']{
   }
 
   .content img{
+    max-width: 100%;
     width: 100%;
   }
 }
@@ -536,14 +547,4 @@ iframe[src*='music']{
 .home .tag{
   color: #bbb;
   font-size: .8em;
-}
-
-.snow-container{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
 }
