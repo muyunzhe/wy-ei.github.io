@@ -36,7 +36,7 @@ title: 对不起我没有故事
 
 很巧，写到这里的时候外面响起了张宇的《雨一直下》
 
-<iframe markdown="block" frameborder="no" border="0" marginwidth="0" marginheight="0" height=86 src="http://music.163.com/outchain/player?type=2&id=190495&auto=0&height=66"></iframe>
+<iframe markdown="block" frameborder="no" border="0" marginwidth="0" marginheight="0" height="86" src="http://music.163.com/outchain/player?type=2&id=190495&auto=0&height=66"></iframe>
 
 这更让我想起那个时候的堂哥，很酷的青年。后来堂哥去了职业高中，再后来就去外面打拼了。我也只能隔很久才能了解到它的事情了。
 
@@ -50,7 +50,7 @@ title: 对不起我没有故事
 
 但我问自己，自己有故事吗，迟疑好久，好像没有！
 
-可惜了已经拿出来的酒。-_-||
+可惜了已经拿出来的酒。-_-\|\|
 
 熄了灯，堂哥和我聊了这些年他在外面经历的一些事情，一些感悟，一些建议，还有一些叮嘱。而我自幼桀骜不驯自然也没有听进入多少。唯独记住了自己的想法。听着堂哥将他的经历，我心想：“自己好像并没有什么故事，长这么大没有经历过什么大的坎坷，一切都很顺利，没有什么失利，除了读书还是读书。而读书衡量你的结果标准也就是你有没有考到重点高中，有没有考到好大学”。想了好多起码说几句吧。我开口对堂哥说：“我觉得我似乎太顺利了，都没有经历过什么失败”。
 

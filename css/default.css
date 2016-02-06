@@ -522,14 +522,9 @@ iframe[src*='music']{
   border:1px solid #ccc;
   overflow-x:auto; 
   margin-bottom: 1.2em;
-  background-color: #eee;   
+  background-color: #eee;
+  padding: 20px; 
 }
-
-.highlight pre{
-  padding: 0 1em;
-  background-color: #eee;   
-}
-
 .home>article{
   margin-bottom: 100px;
 }
