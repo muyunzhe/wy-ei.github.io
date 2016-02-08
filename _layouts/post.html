@@ -12,6 +12,14 @@ layout: default
   </header>
   <div class="content">
       {{ content }}
+      {% if page.tags %}
+        <p class="tag">
+          <i class="fa fa-tag fa-fw"></i>
+          {% for tag in page.tags %}
+          <a href="/tags.html#{{ tag }}">#{{ tag }}</a>
+          {% endfor %}
+        </p>
+      {% endif %}
   </div>
   <footer>
       {% if page.previous %}
