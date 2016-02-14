@@ -122,9 +122,10 @@ body>header a{
   body>header>nav{
     margin-top: 0;
   }
-  body>header>nav i{
-    display: none!important;
+  body>header>nav li{
+    padding-right: 10px;
   }
+
   body>header>nav a{
     padding: 10px 10px 10px 0;
   }
