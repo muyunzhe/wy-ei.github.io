@@ -15,6 +15,6 @@ comment: false
 ### 联系方式:
 
 + 微博:[即刻出发_](http://weibo.com/wangyu1993it)
-+ 邮箱:wy@wy-ei.com
++ 邮箱:nameiswangyu#163.com
 + github:[wy-ei](https://github.com/wy-ei)
 

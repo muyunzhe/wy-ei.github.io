@@ -10,7 +10,7 @@
     {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <meta property="wb:webmaster" content="3e5169279ef4a4c2" />
-    <link rel="stylesheet" href="/css/build/style.min.css" type="text/css" />
+    <link rel="stylesheet" href="/src//build/css/style.min.css" type="text/css" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <meta name="google-site-verification" content="Jt73F_D3PXCcZ8hcFokOfg02ypZsnsPUIqIejRplykw" />
     <meta name="baidu-site-verification" content="8fEQlXaBSl" />
@@ -22,11 +22,12 @@
 
 <body>
     <header id="header">
-        <div>
+      <div class="wrap">
+        <div class="site-title">
             <h1><a href="/">即刻出发</a></h1>
             <h2>Stay hungry,stay foolish.</h2>
         </div>
-        <nav class="header-nav">
+        <nav class="site-nav">
             <ul>
                 <li><a href="/"><i class="fa fa-home fa-fw"></i><span>首页</span></a></li>
                 <li><a href="/list.html"><i class="fa fa-list fa-fw"></i><span>列表</span></a></li>
@@ -35,15 +36,20 @@
                 <li><a href="/about.html"><i class="fa fa-paper-plane fa-fw"></i><span>关于</span></a></li>
             </ul>
         </nav>
+      </div>
     </header>
     <section class="main-container">
+      <div class="wrap">
         {{ content }}
+      </div>
     </section>
     <footer>
+      <div class="wrap">
         <p> &copy; 2015 wy-ei.com. Power by <a href="http://jekyllrb.com/">Jekyll</a>. Host on <a href="https://github.com">Github.</a></p>
+      </div>
     </footer>
-    <script src="/js/build/jquery-2.1.4.min.js"></script>
-    <script src="/js/build/app.min.js"></script>
+    <script src="/src/build/js/jquery-2.1.4.min.js"></script>
+    <script src="/src/build/js/app.min.js"></script>
     <div id="tongji">
         {% include tongji %}
     </div>

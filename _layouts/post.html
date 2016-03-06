@@ -10,7 +10,7 @@ layout: default
       {% endif %}
       <h1>{{ page.title }}</h1>
   </header>
-  <div class="content">
+  <div class="content typo">
       {{ content }}
       {% if page.tags %}
         <p class="tag">
@@ -33,7 +33,7 @@ layout: default
   <div class="show-comment">
     <p id='add-comment'>点击这里，添加评论</p>
   </div>
-  <div id="comment" style="display: none;">
+  <div id="comment" class="comment" style="display: none;">
       {% include comment %}
       <div class="ds-thread" data-thread-key={{ page.id }} data-title={{ page.title }} data-url={{ site.url }}/{{ page.url }}></div>
   </div>
