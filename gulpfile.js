@@ -61,11 +61,11 @@ gulp.task('js', function () {
 gulp.task('css',function(){
     gulp.src('src/scss/style.scss')
         .pipe(sass().on('error',sass.logError))
+        .pipe(rename({suffix:'.min'}))
         .pipe(gulp.dest('src/build/css'));
-    gulp.src(['src/build/css/style.css','src/css/highlight.css'])
+    gulp.src(['src/build/css/style.min.css','src/css/highlight.css'])
         .pipe(concat('style.css'))
         .pipe(minify())
-        .pipe(rename({suffix:'.min'}))
         .pipe(gulp.dest('src/build/css'));
 });
 

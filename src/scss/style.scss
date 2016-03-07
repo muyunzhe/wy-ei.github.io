@@ -20,10 +20,10 @@ p {
     padding: 0;
 }
 
-$linkColor:#404040;
+$linkColor:#000;
 $linkHoverColor:#E50053;
 body {
-    color: #555;
+    color: #444;
     position: relative;
     font-family: -apple-system, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
     font-size: .15rem;
@@ -45,6 +45,7 @@ $size in $heading {
     #{$header} {
         font-size: $size;
         font-weight: normal;
+        color: #000;
     }
 }
 
@@ -79,6 +80,7 @@ body {
             h2 {
                 display: inline;
                 font-weight: lighter;
+                color: #fff;
             }
         }
         .site-nav {
@@ -104,6 +106,9 @@ body {
 
 // > 1400
 @media screen and (min-width: 1400px) {
+    html{
+        font-size: 120px;
+    }
     body>header {
         padding-top: 3rem;
     }
@@ -152,6 +157,11 @@ body {
                 padding-right: .1rem;
             }
         }
+    }
+}
+@media screen and (max-width: 360px) {
+    html{
+        font-size: 90px;
     }
 }
 
@@ -328,12 +338,14 @@ body>footer {
 .tag-cloud {
     margin-bottom: .2rem;
     a {
-        color: #fff;
-        padding: .01rem .1rem;
-        border-radius: 0.05rem;
-        margin: 3px;
         display: inline-block;
-        background-color: #FEC58B;
+        height: 22px;
+        line-height: 22px;
+        padding: 0 10px;
+        border-radius: .1rem;
+        margin: 3px;
+        color: #fff;
+        background-color: #rgb(184, 143, 206);
     }
 }
 
@@ -364,7 +376,7 @@ body>footer {
                 }
                 a {
                     display: block;
-                    padding: .2rem;
+                    padding: .2rem 0;
                     padding-right: 0;
                 }
             }

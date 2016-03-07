@@ -6,6 +6,7 @@ paginate: 100
 permalink: /:title
 
 title: 即刻出发
+slogan: Stay hungry,stay foolish.
 url: http://wy-ei.com
 rss_path: /rss.xml
 atom_path: /atom.xml
