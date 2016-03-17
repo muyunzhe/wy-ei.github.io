@@ -3,14 +3,14 @@ layout: default
 ---
 
 
-<article>
-  <header class="page-header">
+
+  <header class="page-title">
       {% if page.date %}
         <time class="date"><i class="fa fa-calendar fa-fw"></i> {{ page.date|date:"%Y-%m-%d" }}</time>
       {% endif %}
       <h1>{{ page.title }}</h1>
   </header>
-  <div class="content typo">
+  <div class="content">
       {{ content }}
       {% if page.tags %}
         <p class="tag">
@@ -21,14 +21,14 @@ layout: default
         </p>
       {% endif %}
   </div>
-  <footer>
+  <footer class="page-footer">
       {% if page.previous %}
       <p class="last-page">上一篇：<a href="{{ site.url }}{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a></p>
       {% endif %} {% if page.next %}
       <p class="next-page">下一篇：<a href="{{ site.url }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a></p>
       {% endif %}
   </footer>
-</article>
+
 {% if page.comment != false %}
   <div class="show-comment">
     <p id='add-comment'>点击这里，添加评论</p>

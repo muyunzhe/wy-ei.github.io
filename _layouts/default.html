@@ -10,7 +10,7 @@
     {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <meta property="wb:webmaster" content="3e5169279ef4a4c2" />
-    <link rel="stylesheet" href="/src//build/css/style.min.css" type="text/css" />
+    <link rel="stylesheet" href="/src/css/style.css" type="text/css" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <meta name="google-site-verification" content="Jt73F_D3PXCcZ8hcFokOfg02ypZsnsPUIqIejRplykw" />
     <meta name="baidu-site-verification" content="8fEQlXaBSl" />
@@ -21,10 +21,10 @@
 </head>
 
 <body>
-    <header id="header">
+    <header class="header">
       <div class="wrap">
         <div class="site-title">
-            <h1><a href="/">{{ site.title }}</a></h1>
+            <h1 class=""><a href="/">{{ site.title }}</a></h1>
             <h2>{{ site.slogan }}</h2>
         </div>
         <nav class="site-nav">
@@ -45,11 +45,11 @@
     </section>
     <footer>
       <div class="wrap">
-        <p> &copy; 2015 wy-ei.com. Power by <a href="http://jekyllrb.com/">Jekyll</a>. Host on <a href="https://github.com">Github.</a></p>
+        <p> &copy; 2015 - 2016 wy-ei.com. Power by <a href="http://jekyllrb.com/">Jekyll</a>. Host on <a href="https://github.com">Github.</a></p>
       </div>
     </footer>
-    <script src="/src/build/js/jquery-2.1.4.min.js"></script>
-    <script src="/src/build/js/app.min.js"></script>
+    <script src="/src/js/jquery-2.1.4.min.js"></script>
+    <script src="/src/js/app.js"></script>
     <div id="tongji">
         {% include tongji %}
     </div>

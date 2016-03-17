@@ -1,16 +1,15 @@
 ---
-layout: page
+layout: home
 title: 最近发布
 ---
 
 
 
-<div class="home">
 
 {% for i in (0..4) %}
     <article>
         <header>
-          <time class="date"><i class="fa fa-calendar fa-fw"></i> {{ site.posts[i].date|date:"%Y-%m-%d" }}</time>
+          <p><i class="fa fa-calendar fa-fw"></i> <time>{{ site.posts[i].date|date:"%Y-%m-%d" }}</time></p>
           <h2 class="title"><a href="{{ site.posts[i].url }}">{{ site.posts[i].title }}</a></h2>
         </header>
         <div class="content">
@@ -31,5 +30,3 @@ title: 最近发布
         </div>
     </article>
 {% endfor %}
-  
-</div>

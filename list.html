@@ -10,7 +10,7 @@ title: 列表
   <li>
     <a href="{{ post.url }}">
       <h3>{{ post.title }}</h3>
-      <p class="date">{{ post.date|date:"%Y-%m-%d" }}</p>
+      <time class="date">{{ post.date|date:"%Y-%m-%d" }}</time>
     </a>
   </li>
 {% endfor %}
