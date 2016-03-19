@@ -2,7 +2,6 @@ markdown: kramdown
 kramdown: 
   input: GFM
 highlighter: rouge
-paginate: 100
 permalink: /:title
 
 title: 即刻出发

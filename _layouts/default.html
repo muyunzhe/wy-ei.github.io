@@ -21,7 +21,8 @@
 </head>
 
 <body>
-    <header class="header">
+    
+    <header class="header" {% if page.hdbg %} style="background-image:url({{ page.hdbg }})"{% endif %}>
       <div class="wrap">
         <div class="site-title">
             <h1 class=""><a href="/">{{ site.title }}</a></h1>
@@ -38,14 +39,13 @@
         </nav>
       </div>
     </header>
-    <section class="main-container">
-      <div class="wrap">
+    <section class="main wrap">
+      
         {{ content }}
-      </div>
     </section>
     <footer>
       <div class="wrap">
-        <p> &copy; 2015 - 2016 wy-ei.com. Power by <a href="http://jekyllrb.com/">Jekyll</a>. Host on <a href="https://github.com">Github.</a></p>
+        <p><i class="fa fa-copyright fa-fw"></i> 2015-2016 | wy-ei.com | Host on <a href="https://github.com">Github</i></a></p>
       </div>
     </footer>
     <script src="/src/js/jquery-2.1.4.min.js"></script>

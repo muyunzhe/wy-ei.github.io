@@ -120,11 +120,8 @@ h4 {
 }
 
 @media screen and (min-width: 1400px) {
-    html {
-        font-size: 120px;
-    }
     .header {
-        padding-top: 3rem;
+        padding-top: 4rem;
     }
     .wrap {
         width: 1200px;
@@ -185,7 +182,7 @@ h4 {
 
 /* container layout */
 
-.main-container {
+.main {
     margin-top: 1rem;
 }
 
@@ -267,8 +264,7 @@ h4 {
     cursor: pointer;
 }
 
-.page-footer a,
-{
+.page-footer a,{
     padding-bottom: .03rem;
     border-bottom: 1px solid #ccc;
 }
@@ -277,8 +273,7 @@ h4 {
     float: right;
 }
 
-.page-footer a:hover,
-{
+.page-footer a:hover{
     color: #e50053;
 }
 
@@ -316,16 +311,20 @@ h4 {
 body > footer {
     margin-top: 1rem;
     border-top: 1px solid #ccc;
+    padding: .05rem 0;
 }
 
-body > footer > p {
+body > footer  p {   
     font-size: .9em;
-    width: 60%;
-    margin: .2em auto;
+    line-height: 1.5;
 }
 
 .article-list {
     margin: .8rem 0;
+}
+
+.article-list .blog-count{
+    margin-bottom: .6rem;
 }
 
 .article-list li {
@@ -362,7 +361,6 @@ body > footer > p {
 }
 
 .tag-cloud a {
-    font-weight: 100;
     font-size: 14px;
     display: inline-block;
     margin: .03rem;
@@ -419,7 +417,7 @@ body > footer > p {
 #to-top {
     position: fixed;
     right: .05rem;
-    bottom: .15rem;
+    bottom: .3rem;
     width: .32rem;
     height: .32rem;
     cursor: pointer;
