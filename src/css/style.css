@@ -70,7 +70,6 @@ h4 {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
     color: #fff;
     background-color: #333;
     background-image: url(/images/bg/2015-07-13.jpg);
@@ -124,7 +123,7 @@ h4 {
         padding-top: 4rem;
     }
     .wrap {
-        width: 1200px;
+        width: 1000px;
     }
 }
 
@@ -193,12 +192,15 @@ h4 {
 }
 
 .content a {
-    text-decoration: underline;
+    border-bottom: 1px solid #ccc;
+}
+.content a:hover {
+    border-bottom: 1px solid #666;
 }
 
 .content p {
     line-height: 2.2em;
-    margin-bottom: 1em;
+    margin: 1.5em 0;
 }
 
 .content ol,
@@ -264,7 +266,7 @@ h4 {
     cursor: pointer;
 }
 
-.page-footer a,{
+.page-footer a{
     padding-bottom: .03rem;
     border-bottom: 1px solid #ccc;
 }
@@ -375,9 +377,15 @@ body > footer  p {
     background-color: #555;
 }
 
+
 .tag-list .tag-name i {
     padding-right: .1rem;
 }
+
+.tag-list .tag-name:target{
+    color: #e50053;
+}
+
 
 .tag-list h3 {
     font-size: .15rem;
