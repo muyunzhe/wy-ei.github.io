@@ -28,7 +28,7 @@ $(function () {
         var
             altPrefix = alt.split('-')[0],
             altText = alt.split('-')[1];
-        var isPage = $('#page').length == 0 ? false : true;
+        var isPage = $('#page').length === 0 ? false : true;
 
         var width = $this.parent().width();
         if (altPrefix == 'bg') {
