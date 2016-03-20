@@ -2,9 +2,9 @@
 layout: post
 title: 想减肥？请不要去买新跑鞋
 category: opinion
+hdbg: /images/bg/run.jpg
 ---
 
-![bg-](/images/bg/run.jpg)
 
 人们都是怎么了？晚上去操场跑步以释心中之压抑。来到操场，发现这里人声鼎沸，人比当年高中上早操都多。在平时你不免听到有人说：“呀！不行啦，太胖了，我要减肥！”。可能操场上跑步的人中就有不少这样的人吧。
 

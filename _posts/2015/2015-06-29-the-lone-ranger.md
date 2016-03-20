@@ -3,9 +3,9 @@ layout: post
 title: 那些特立独行的人们
 tag: 观点
 category: opinion
+hdbg: /images/bg/maxresdefault.jpg
 ---
 
-![both](/images/bg/maxresdefault.jpg)
 
 昨日，作为学院科学与技术协会的前成员，很荣幸地参与新一届主席团成员的评选工作。大二的学弟学妹们在台上发表演讲谈自己对社团未来发展的想法，以及过去存在的问题。我也抓住机会问了他们一些问题，刷刷存在感。
 

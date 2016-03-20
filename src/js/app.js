@@ -25,28 +25,14 @@ $(function () {
         if (!alt) {
             return;
         }
-        var
-            altPrefix = alt.split('-')[0],
-            altText = alt.split('-')[1];
-        var isPage = $('#page').length === 0 ? false : true;
-
-        var width = $this.parent().width();
-        if (altPrefix == 'bg') {
-            $this.css('width', '100%');
-            $this.css('height', width / 16 * 9);
-        } else if (altPrefix == 'hbg' && !isPage) {
-            $('#header').css('backgroundImage', 'url(' + $this.attr('src') + ')');
-            $this.parent().remove();
-            return;
-        } else if (altPrefix == 'both' && !isPage) {
-            $('#header').css('backgroundImage', 'url(' + $this.attr('src') + ')');
-            $this.css('width', '100%');
-            $this.css('height', width / 16 * 9);
-        }else{
-            altText = altPrefix;
+        var text,
+            rText = /(?:w\d+)?-?(.*)/g;
+        var match = rText.exec(alt);
+        if(match){
+            text = match[1];
         }
-        if (altText) {
-            $('<div>').addClass('img-alt-wrap').wrapInner('<p>'+altText+'</p>').insertAfter($this);
+        if (text) {
+            $('<div>').addClass('img-alt-wrap').wrapInner('<p>'+text+'</p>').insertAfter($this);
         }
     });
 });

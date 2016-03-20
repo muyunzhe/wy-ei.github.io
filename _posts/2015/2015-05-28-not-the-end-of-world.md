@@ -3,9 +3,8 @@ layout: post
 title: 世界未末日 
 category: opinion
 description: 不到等到世界末日才想珍惜一切
+hdbg: /images/bg/jay.jpg
 ---
-
-![bg-不到等到世界末日才想珍惜一切](/images/bg/jay.jpg)
 
 
 昨晚做了一个奇怪的梦。

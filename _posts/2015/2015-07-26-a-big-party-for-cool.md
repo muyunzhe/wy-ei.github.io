@@ -5,7 +5,7 @@ category: opinion
 tag: 感悟
 ---
 
-![bg-Be Awesome](/images/bg/awesome.png)
+![w100-Be Awesome](/images/bg/awesome.png)
 
 
 酷，到底是个什么感觉？小时候电视里看到一帮青年坐在马路边喝酒抽烟，觉得那样很酷，于是和小朋友们凑钱去买香烟然后大家在学校的路上点燃，看到一圈圈青烟从指缝飘走，看到那些小女生看着我们的眼神，觉得自己很酷。

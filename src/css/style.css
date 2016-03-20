@@ -228,6 +228,10 @@ h4 {
     margin: auto;
     border: 1px solid #ccc;
 }
+/* control img width by the content in alt attribute */
+.content img[alt^="w100"]{
+    width: 100%;
+}
 
 .content hr {
     height: .1rem;
@@ -512,3 +516,6 @@ iframe[src*='music'] {
 .tag a:first-of-type {
     margin-right: .1rem;
 }
+
+
+

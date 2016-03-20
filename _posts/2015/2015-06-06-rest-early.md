@@ -2,11 +2,9 @@
 layout: post
 title: 早点休息，多多锻炼
 category: opinion
-tag: 休息
+tag: 感悟
+hdbg: /images/bg/run.jpg
 ---
-
-
-![bg-早点休息，多多锻炼](/images/bg/run.jpg)
 
 
 父亲常常提醒我，让我晚上早点儿休息，我觉得年轻人熬熬夜没有关系，也就没有挂在心上，现在想起觉得真不该。

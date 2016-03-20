@@ -3,9 +3,8 @@ layout: post
 title: 生活本就不易
 category: opinion
 tag: 生活
+hdbg: /images/bg/BingWallpaper-2015-09-08.jpg
 ---
-
-![bg](/images/bg/BingWallpaper-2015-09-08.jpg)
 
 其实我是没有资格说这话的，整天待在安静的学校了，吃父母的喝父母的，没经历过大风大浪，没体验过大起大落，在温室里长大的家伙，又怎能发表这样的言论呢？
 

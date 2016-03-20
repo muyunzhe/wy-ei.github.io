@@ -3,9 +3,9 @@ layout: post
 title: 那帮爱打篮球的家伙
 category: opinion
 tag: [篮球,兄弟]
+hdbg: /images/bg/nbafinals.jpg
 ---
 
-![bg](/images/bg/nbafinals.jpg)
 
 又一届 NBA 总决赛开打了，早上上完实验就迫不及待地回来寝室看揭幕战。这么多年一直是勒布朗的铁粉的我，今年的目光自然也是从热火转移到了骑士。但结局很不幸，勒布朗最后错失绝杀，在加时赛阶段也是只得到了两分，输掉了首场比赛。带着遗憾躺躺下休息，想这么多年篮球带给我的点点滴滴。
 

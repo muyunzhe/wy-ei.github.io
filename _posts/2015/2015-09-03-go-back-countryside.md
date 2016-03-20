@@ -3,9 +3,9 @@ layout: post
 title: 最后一个暑假，让他回归乡野
 category: opinion
 tag: 乡村
+hdbg: /images/bg/countryside.jpg
 ---
 
-![bg](/images/bg/countryside.jpg)
 
 刚刚过去的暑假可能是我学习生涯最后一个暑假了，和往常不同这次我哪里都不去，足足在家一个月，可以说是陪家人，但更多的是彻底休息。
 

@@ -3,10 +3,9 @@ layout: post
 title: 一种奇怪而又普遍的思维方式 
 category: opinion
 tag: 感悟
-description:
+hdbg: /images/bg/young.jpeg
 ---
 
-![bg-](/images/bg/young.jpeg)
 
 终于我也发现了一个奇怪的现象。有时候我会说某个东西不好，某个东西有缺点。别人听了之后就会很不满地说：“你说这个东西不好，那你别用啊！”。比如我说：“安卓手机其实不太好”。这个时候别人可能说：“那你去用iphone啊”。但是我要是说iphone也不好呢？
 
