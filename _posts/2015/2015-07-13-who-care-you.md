@@ -9,7 +9,9 @@ hdbg: /images/bg/2015-07-13.jpg
 
 先听首歌儿，苏打绿-《喜欢寂寞》
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=374605&auto=0&height=66"></iframe>
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=374605&auto=0&height=66"></iframe>
+
 
 无意间我脑子里闪过一个念头，这个世界上到底有多少人真正地在乎你？然后立刻觉得这真是一个很了不起的问题，很难回答，甚至无法回答。不过最后我还是想到了一个还算不错的回答。
 

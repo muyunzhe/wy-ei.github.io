@@ -12,7 +12,7 @@ hdbg: /images/blog/2015/star.jpg
 
 一时间《越长大越孤单》成为我的精神寄托，我一遍一遍地循环着这首歌，直到我坚信人们都已经长大了，这是必然的，不可避免，也无需避免。每个人曾经都是小孩，记住这一点就够了。失去时光，失去许多，失去童心，失去一切。
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=368800&auto=0&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=368800&auto=0&height=66"></iframe>
 
 再不能一起无牵无挂地吹嘘，再不能一起做儿时伴我们成长的游戏，再不能肆无忌惮地打闹。就这样成为一个大人了。是呀，有时候多么希望这是一场梦，当梦醒来的时候，我擦干嘴角的口水揉揉眼睛，发现我正坐在刻着“早”字的旧课桌上，旁边扎着马尾辫的姑娘惊奇地看着我，我看着她，露出她理解不了的笑容。但这终究不是一场梦，那一切都过去了。成长就是这样，经历的时候不以为然，过后又让人怀念。
 

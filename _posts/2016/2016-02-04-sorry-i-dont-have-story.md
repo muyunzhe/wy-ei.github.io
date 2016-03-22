@@ -38,7 +38,7 @@ title: 对不起我没有故事
 
 很巧，写到这里的时候外面响起了张宇的《雨一直下》
 
-<iframe markdown="block" frameborder="no" border="0" marginwidth="0" marginheight="0" height="86" src="http://music.163.com/outchain/player?type=2&id=190495&auto=0&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" height="86" src="http://music.163.com/outchain/player?type=2&id=190495&auto=0&height=66"></iframe>
 
 这更让我想起那个时候的堂哥，很酷的青年。后来堂哥去了职业高中，再后来就去外面打拼了。我也只能隔很久才能了解到它的事情了。
 
