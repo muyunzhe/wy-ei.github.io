@@ -1,38 +1,43 @@
-$(function () {
-    // 添加回到顶部图标
-    $('<div>').attr('id', 'to-top').appendTo('body').click(function () {
-        $(document.body).animate({scrollTop:0}, 800,'swing');
-        return false;
-    });
-
-    // 展开评论
-    $('#add-comment').click(function () {
-        $('#comment').show().queue(function(){
-            $('body').scrollTop($('body').height() - $(window).height());
+window.addEventListener('load', function() {
+    // 展开评论    
+    var showComment = document.getElementById('show-comment');
+    var comment = document.getElementById('comment');
+    var body = document.body;
+    if (showComment) {
+        showComment.addEventListener('click', function() {
+            comment.style.display = 'block';
+            showComment.parentElement.removeChild(showComment);
+            body.scrollTop = body.clientHeight - window.innerHeight;
         });
-        $('.show-comment').remove();
-    });
+    }
 
-
-    // 读取图片的 alt 信息，根据其内容修改页面
-    // bg：设置宽度为100%，宽高比为 16：9
-    // hbg：将其设置为 header 的背景图片
-    // both：将其宽度设置为100%，并设置为 header 的背景
-    // 将余下的 alt 内容添加在图片下方
-    $('.content img').each(function (i, img) {
-        var $this = $(img),
-            alt = $this.attr('alt');
+    // 将图片的 alt 属性内容添加在图片下方
+    // 在 markdown 中使用了 alt 属性来控制图片的
+    // 所以需要剔除那部分信息
+    // w100: 设置图片的宽度为 100%
+    var imgs = document.querySelectorAll('.content img');
+    for (var i = 0, len = imgs.length; i < len; i++) {
+        var alt = imgs[i].getAttribute('alt');
         if (!alt) {
             return;
         }
         var text,
             rText = /(?:w\d+)?-?(.*)/g;
         var match = rText.exec(alt);
-        if(match){
+        if (match) {
             text = match[1];
         }
         if (text) {
-            $('<div>').addClass('img-alt-wrap').wrapInner('<p>'+text+'</p>').insertAfter($this);
+            var div = document.createElement('div');
+            div.setAttribute('class', 'img-alt-wrap');
+            div.innerHTML = '<p>' + text + '</p>';
+            imgs[i].parentElement.appendChild(div);
         }
+    }
+    
+    
+    var toTop = document.getElementsByClassName('to-top')[0];
+    toTop.addEventListener('click',function(){
+       document.body.scrollTop = 0; 
     });
 });
