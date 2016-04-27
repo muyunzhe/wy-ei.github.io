@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 那帮爱打篮球的家伙
-category: opinion
+category: 随笔
 tag: [篮球,兄弟]
 hdbg: /images/bg/nbafinals.jpg
 ---

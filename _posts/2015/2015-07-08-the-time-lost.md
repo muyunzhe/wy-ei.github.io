@@ -2,7 +2,7 @@
 layout: post
 title: 就这样过了多少天
 tag: 时间
-category: opinion
+category: 随笔
 ---
 
 ![w100](/images/bg/time.jpg)

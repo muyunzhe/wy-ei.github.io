@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 让一切有理有据
-category: opinion
+category: 随笔
 tag: 观点
 ---
 

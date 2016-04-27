@@ -1,6 +1,6 @@
 ---
 layout: post
-category: opinion
+category: 随笔
 tag: [读书,思维]
 title: 何为定式思维
 ---

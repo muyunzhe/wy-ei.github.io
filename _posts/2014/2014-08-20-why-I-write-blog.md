@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 我为什么写博客？
-category: opinion
+category: 随笔
 tag: 博客
 description: 何处寻找一片安静的天地
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 电子信息工程四年学习之思
-category: opinion
+category: 随笔
 tag: 分享好文
 ---
 

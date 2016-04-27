@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 我的校招求职经历
-category: opinion
+category: 随笔
 tag: 校招
 description: 我的校招求职经历
 ---

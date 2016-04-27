@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 基础的重要性
-category: opinion
+category: 随笔
 tag: 学习
 ---
 

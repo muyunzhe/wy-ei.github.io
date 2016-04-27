@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 你喜欢的，也许就是你正在做的
-category: opinion
+category: 随笔
 tag: 观点
 ---
 

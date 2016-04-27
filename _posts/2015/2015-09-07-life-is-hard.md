@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 生活本就不易
-category: opinion
+category: 随笔
 tag: 生活
 hdbg: /images/bg/BingWallpaper-2015-09-08.jpg
 ---

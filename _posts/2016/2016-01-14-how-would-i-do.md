@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如果是我，我会怎么做
-category: opinion
+category: 随笔
 tag: 个人修养
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 为什么我用Linux 
-category: opinion
+category: 随笔
 tag: Linux
 ---
 

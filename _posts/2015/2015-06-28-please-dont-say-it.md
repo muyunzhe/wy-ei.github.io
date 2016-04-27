@@ -2,7 +2,7 @@
 layout: post
 title: 有些词，我们本不该说
 tag: 文明
-category: opinion
+category: 随笔
 hdbg: /images/bg/2015-06-28.jpg
 ---
 

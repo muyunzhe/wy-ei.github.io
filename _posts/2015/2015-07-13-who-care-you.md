@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 有谁在乎你
-category: opinion
+category: 随笔
 tag: 个人修养
 hdbg: /images/bg/2015-07-13.jpg
 ---

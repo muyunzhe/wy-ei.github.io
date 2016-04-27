@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 心中的英雄-大圣
-category: opinion
+category: 随笔
 tag: 电影
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 分享几个短片
-category: opinion
+category: 随笔
 tag: 短片
 ---
 

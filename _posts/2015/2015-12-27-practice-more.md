@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 多练习就够了  
-category: opinion
+category: 随笔
 tag: 心得
 ---
 

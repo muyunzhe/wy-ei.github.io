@@ -1,6 +1,6 @@
 ---
 layout: post
-category: opinion
+category: 随笔
 tag: [读书,感悟]
 title: 对不起我没有故事
 ---

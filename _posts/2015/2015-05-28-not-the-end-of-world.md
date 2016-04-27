@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 世界未末日 
-category: opinion
+category: 随笔
 description: 不到等到世界末日才想珍惜一切
 tag: 观点
 hdbg: /images/bg/jay.jpg

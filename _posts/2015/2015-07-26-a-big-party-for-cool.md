@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 一场狂欢，向酷致敬
-category: opinion
+category: 随笔
 tag: 感悟
 ---
 

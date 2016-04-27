@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 在工作中提高或许是不可能的
-category: opinion
+category: 随笔
 tag: 工作心得
 ---
 

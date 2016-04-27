@@ -1,6 +1,6 @@
 ---
 layout: post
-category: opinion
+category: 随笔
 title: 腿这么长，还迟到！
 tag: [高中,回忆]
 ---

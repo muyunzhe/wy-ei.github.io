@@ -1,6 +1,6 @@
 ---
 layout: post
-category: opinion
+category: 随笔
 title: 什么是有意思的事情
 tag: 感悟
 description: 人们常说某某事情很有意思，但是究竟什么是有意思的事情呢？

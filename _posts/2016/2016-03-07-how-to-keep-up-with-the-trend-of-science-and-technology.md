@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何才能紧跟科技的潮流
-category: opinion
+category: 随笔
 tag: 感悟
 description: 当今科技发展甚快，只有不断学习才能紧跟潮流
 ---

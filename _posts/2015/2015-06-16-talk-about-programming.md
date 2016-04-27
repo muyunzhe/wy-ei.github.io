@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 谈谈编程
-category: opinion
+category: 随笔
 tag: 编程
 description: 渐渐地，当别人问我在干嘛的时候，我会不太喜欢说实话说我在编程，因为似乎谈起编程人们总是会联想到死气沉沉，面无表情的的IT单身眼镜男。
 hdbg: /images/bg/programming.jpg

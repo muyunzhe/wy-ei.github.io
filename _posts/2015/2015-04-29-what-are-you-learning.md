@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 你是学什么的？
-category: opinion
+category: 随笔
 tag: 博客
 description: 常常有人问我你是学什么的，将来干什么？我不知道如何回答。
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: 那些特立独行的人们
 tag: 观点
-category: opinion
+category: 随笔
 hdbg: /images/bg/maxresdefault.jpg
 ---
 

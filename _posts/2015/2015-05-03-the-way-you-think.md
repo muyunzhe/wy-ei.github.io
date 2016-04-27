@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 一种奇怪而又普遍的思维方式 
-category: opinion
+category: 随笔
 tag: 感悟
 hdbg: /images/bg/young.jpeg
 ---

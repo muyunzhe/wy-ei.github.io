@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 避免与人争论
-category: opinion
+category: 随笔
 tag: 个人修养
 ---
 

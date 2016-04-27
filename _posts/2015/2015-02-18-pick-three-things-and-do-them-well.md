@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 挑三件事，把它们做到极致 
-category: opinion
+category: 随笔
 tag: 习惯 
 ---
 

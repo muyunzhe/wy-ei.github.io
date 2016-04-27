@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 最后一个暑假，让他回归乡野
-category: opinion
+category: 随笔
 tag: 乡村
 hdbg: /images/bg/countryside.jpg
 ---

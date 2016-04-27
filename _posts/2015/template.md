@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 
-category: opinion
+category: 随笔
 tag:
 description:
 ---

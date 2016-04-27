@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 我眼中的社交网络
-category: opinion
+category: 随笔
 tag: 网络
 ---
 

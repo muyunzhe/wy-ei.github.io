@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 早点休息，多多锻炼
-category: opinion
+category: 随笔
 tag: 感悟
 hdbg: /images/bg/run.jpg
 ---

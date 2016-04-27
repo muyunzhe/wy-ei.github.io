@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 想减肥？请不要去买新跑鞋
-category: opinion
+category: 随笔
 hdbg: /images/bg/run.jpg
 ---
 

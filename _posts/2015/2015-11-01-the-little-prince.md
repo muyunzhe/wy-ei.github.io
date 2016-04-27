@@ -1,6 +1,6 @@
 ---
 layout: post
-category: opinion
+category: 随笔
 tag: [电影,小王子]
 title: 星空下，我看到了小王子
 hdbg: /images/blog/2015/star.jpg
