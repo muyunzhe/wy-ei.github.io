@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 写给初学者的计算机存储体系介绍
-category: cs
-tag: 理解计算机
+category: 理解计算机
+tag: 计算机
 ---
 
 ![w100](/images/computer/2015/bg.jpg)

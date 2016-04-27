@@ -1,6 +1,6 @@
 ---
 layout: post
-category: tools
+category: 随笔
 title: 为什么要记笔记?因为有印象笔记！
 tag: 工具
 ---

@@ -4,14 +4,14 @@ title: 列表
 ---
 
 
-<div class="article-list">
+<div>
     <p class="blog-count"><i class="fa fa-area-chart"></i> 嗯...目前共计 {{ site.posts | size }} 篇博文，继续努力！</p>
-    <ul>
+    <ul class="m-list">
     {% for post in site.posts %}
-    <li>
+    <li class="list-item">
         <a href="{{ post.url }}">
-        <h3>{{ post.title }}</h3>
-        <time class="date">{{ post.date|date:"%Y-%m-%d" }}</time>
+	        <p class="item-name">{{ post.title }}</p>
+	        <time class="date">{{ post.date|date:"%Y-%m-%d" }}</time>
         </a>
     </li>
     {% endfor %}

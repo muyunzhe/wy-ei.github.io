@@ -1,7 +1,7 @@
 markdown: kramdown
-kramdown: 
+kramdown:
   input: GFM
-highlighter: rouge
+  syntax_highlighter: rouge
 permalink: /:title
 
 title: 即刻出发

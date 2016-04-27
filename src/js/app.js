@@ -1,5 +1,5 @@
 window.addEventListener('load', function() {
-    // 展开评论    
+    // 展开评论
     var showComment = document.getElementById('show-comment');
     var comment = document.getElementById('comment');
     var body = document.body;
@@ -34,10 +34,22 @@ window.addEventListener('load', function() {
             imgs[i].parentElement.appendChild(div);
         }
     }
-    
-    
+
+
     var toTop = document.getElementsByClassName('to-top')[0];
     toTop.addEventListener('click',function(){
-       document.body.scrollTop = 0; 
+       document.body.scrollTop = 0;
     });
+
+
+
+	var highlight = document.getElementsByClassName('highlight');
+	if(highlight.length){
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = '/src/css/highlight.css';
+		document.head.appendChild(link);
+	}
+
 });

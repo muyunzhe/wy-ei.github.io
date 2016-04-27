@@ -2,7 +2,7 @@
 layout: post
 title: 读《写给大家看的设计书》
 description: 无意间在多看上面看到推荐这本书，恰巧当天我们写的软件的GUI界面遭遇吐槽，狠下心来购之一看...
-category:  literature
+category:  读书
 tag: 读书
 ---
 

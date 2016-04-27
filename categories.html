@@ -1,20 +1,22 @@
 ---
 layout: page
-title: 标签
+title: 分类
 ---
 
+
 <div class="m-tag-list">
-{% for tag in site.tags %}
-  <a href="#{{ tag[0] }}">{{ tag[0] }}</a>
+{% for category in site.categories %}
+  <a href="#{{ category | first }}">{{ category | first }} ({{ category | last | size }})</a>
 {% endfor %}
 </div>
 
+
 <ul class="m-suplist">
-{% for tag in site.tags %}
+{% for category in site.categories %}
   <li class="suplist-item">
-      <h3 id="{{ tag[0] }}" class="suplist-name"><i class="fa fa-tag fa-fw"></i>{{ tag[0] }}</h3>
+      <h3 id="{{ category | first }}" class="suplist-name"><i class="fa fa-folder fa-fw"></i>{{ category | first }}</h3>
       <ul class="m-list">
-      {% for post in tag[1] %}
+      {% for post in category.last %}
         <li class="list-item">
           <a href="{{ post.url }}">
           <p class="item-name">{{ post.title }}</p>

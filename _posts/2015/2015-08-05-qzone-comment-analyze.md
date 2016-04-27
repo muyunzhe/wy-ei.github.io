@@ -1,7 +1,7 @@
 ---
 layout: post
-category: software
 title: QQ空间留言分析报告
+category: 随笔
 tag: 数据分析
 ---
 
@@ -111,4 +111,3 @@ tag: 数据分析
 
 
 * *本次分析使用了nodejs，mysql，c，grep，sort，uniq，wc 等工具，图表由 google sheets 生成。*
-
