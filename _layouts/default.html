@@ -4,8 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <meta name="author" content="Wangyu" /> {% if page.description %}
-    <meta name="description" content="{{ page.description }}"> {% endif %}
+    <meta name="author" content="Wangyu" />
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% else %}
+    <meta name="description" content="wy-ei 的博客，激扬文字，交流思想">
+    {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <meta property="wb:webmaster" content="3e5169279ef4a4c2" />
     <link rel="stylesheet" href="/src/css/style.css" type="text/css" />

@@ -54,7 +54,11 @@ cookie 由一下几个部分组成：
 
 cookie 中 name 和 value 不能有 `, ; =` 以及空格 ，因为这几个符号是用来分隔 cookie 中的名和值的。如要包含，则要进行字符转译。在 javascript 中可以使用 `encodeURIComponent` 来完成。
 
-对于服务器要设置 cookie 只需要在 HTTP 响应头部中使用 `Set-Cookie: token=324` 这样的方式就可以了。对于浏览器可以使用 `document.cookie="name=xiaowang";domain="example.com"` 就可以了。
+对于服务器要设置 cookie 只需要在 HTTP 响应头部中使用 `Set-Cookie: token=324` 这样的方式就可以了。对于浏览器可以使用以下方法：
+
+```
+document.cookie="name=xiaowang";domain="example.com"
+```
 
 ### max-age
 
